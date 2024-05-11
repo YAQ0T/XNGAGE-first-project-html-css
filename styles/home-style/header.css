@@ -31,3 +31,7 @@
   background-color: var(--primary-color-brand-01);
   color: var(--text-inverse);
 }
+#search {
+  display: flex;
+  gap: 15px;
+}
