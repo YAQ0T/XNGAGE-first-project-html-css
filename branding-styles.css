@@ -1,0 +1,44 @@
+:root {
+  --primary-color-brand-01: #003150;
+  --primary-color-brand-02: #82786f;
+  --primary-color-brand-03: #aa272f;
+  --text-black: #1f1f1f;
+  --text-inverse: #ffffff;
+  --supplementary-color-ui-01: #d7d3c7;
+  --supplementary-color-ui-01-50: rgba(215, 211, 199, 0.5);
+
+  --supplementary-color-ui-02: #d3dee4;
+  --supplementary-color-ui-02-50: rgba(211, 222, 228, 0.5);
+
+  --supplementary-color-ui-03: #007c92;
+  --supplementary-color-ui-03-50: rgba(0, 124, 146, 0.5);
+
+  --supplementary-color-ui-04: #477f80;
+  --supplementary-color-ui-04-50: rgba(71, 127, 128, 0.5);
+
+  --supplementary-color-ui-05: #bd4f19;
+  --supplementary-color-ui-05-50: rgba(189, 79, 25, 0.5);
+
+  --supplementary-color-ui-06: #53284f;
+  --supplementary-color-ui-06-50: rgba(83, 40, 79, 0.5);
+
+  --support-color-one: #c40b3e;
+  --support-color-two: #088653;
+  --support-color-three: #e98300;
+  --support-color-four: #2080b5;
+  --drop-shadow-primary: rgba(0, 49, 80, 0.25);
+  --drop-shadow-onHover: rgba(0, 49, 80, 0.35);
+  --drop-shadow-secondary: rgba(0, 49, 80, 0.25);
+}
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("./assets/Fonts/HelveticaNeue/HelveticaNeueBold.otf");
+}
+@font-face {
+  font-family: "Helvetica Neue Black";
+  src: url("./assets/Fonts/HelveticaNeue/HelveticaNeueBlack.otf");
+}
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url("./assets/Fonts/HelveticaNeue/HelveticaNeueMedium.otf");
+}

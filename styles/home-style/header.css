@@ -1,0 +1,33 @@
+#xng-logo-header {
+  width: 400px;
+  height: auto;
+}
+.header {
+  display: flex;
+  box-shadow: 0 0 8px 0 var(--drop-shadow-primary);
+  padding-block: 45px;
+  padding-inline: 80px;
+  border-bottom: 10px solid var(--primary-color-brand-03);
+  font-size: 18pt;
+  font-family: "Helvetica Neue bold";
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-items {
+  width: 75%;
+  text-transform: uppercase;
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+.menu-items li {
+  margin: 0;
+  padding-block: 24px;
+  padding-inline: 10px;
+  transition: 0.5s background-color, 3s color;
+  border-radius: 10px;
+}
+.menu-items li:hover {
+  background-color: var(--primary-color-brand-01);
+  color: var(--text-inverse);
+}

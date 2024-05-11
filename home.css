@@ -1,0 +1,17 @@
+@import url("/styles/home-style/upper-section.css");
+@import url("/styles/home-style/header.css");
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  color: var(--text-black);
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: var(--primary-color-brand-01);
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
