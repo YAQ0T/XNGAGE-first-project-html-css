@@ -1,5 +1,5 @@
-@import url("/styles/home-style/upper-section.css");
-@import url("/styles/home-style/header.css");
+@import url("./styles/home-style/upper-section.css");
+@import url("./styles/home-style/header.css");
 body {
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
