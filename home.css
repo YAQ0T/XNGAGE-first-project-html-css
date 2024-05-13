@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
   color: var(--text-black);
+  box-sizing: border-box;
 }
 a,
 a:visited,

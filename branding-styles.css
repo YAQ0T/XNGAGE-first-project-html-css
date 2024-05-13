@@ -42,3 +42,12 @@
   font-family: "Helvetica Neue Medium";
   src: url("./assets/Fonts/HelveticaNeue/HelveticaNeueMedium.otf");
 }
+@font-face {
+  font-family: "Helvetica Neue Light";
+
+  src: url("./assets/Fonts/HelveticaNeue/HelveticaNeueLight.otf");
+}
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  src: url("./assets/Fonts/HelveticaNeue/HelveticaNeueThin.otf");
+}
