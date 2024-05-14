@@ -1,6 +1,9 @@
 .mobile {
   display: none;
 }
+.fa-solid.fa-bars {
+  display: none;
+}
 #xng-logo-header {
   width: 185px;
   height: auto;
@@ -141,6 +144,9 @@
     display: none;
   }
   .mobile {
+    display: flex;
+  }
+  .fa-solid.fa-bars {
     display: flex;
   }
   #xng-logo-header {
