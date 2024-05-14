@@ -1,10 +1,10 @@
-@import url("./styles/home-style/upper-section.css");
-@import url("./styles/home-style/header.css");
+* {
+  box-sizing: border-box;
+  color: var(--text-black);
+}
 body {
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
-  color: var(--text-black);
-  box-sizing: border-box;
 }
 a,
 a:visited,
@@ -15,4 +15,8 @@ a:hover {
 }
 ul {
   list-style-type: none;
+}
+.container {
+  max-width: 2560px;
+  display: flex;
 }

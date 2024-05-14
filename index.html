@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="/branding-styles.css" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="/styles/home-style/header.css" />
 
     <script
       src="https://kit.fontawesome.com/03658ce1f8.js"
@@ -19,7 +20,7 @@
     <script src="/home.js" defer></script>
   </head>
   <body>
-    <section>
+    <header class="header">
       <article class="home-article">
         <p>
           Cleaver-Brooks ClearFire<i class="fa-regular fa-registered"></i>-CE
@@ -28,7 +29,8 @@
         </p>
         <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
       </article>
-      <ul class="section-nav">
+
+      <ul class="section-nav hide-mobile">
         <a>
           <li>
             <i class="fa-solid fa-tower-cell"></i>
@@ -42,77 +44,32 @@
           </li>
         </a>
       </ul>
-    </section>
-    <header id="main-header" class="header">
-      <i id="burger-menu" class="fa-solid fa-bars"></i>
+      <div class="main-header">
+        <i id="burger-menu" class="mobile fa-solid fa-bars"></i>
+        <a class="logo-link" href="/index.html"
+          ><img
+            src="/assets/images/logo/logo.svg"
+            alt="logo"
+            id="xng-logo-header"
+            class="logo-img"
+        /></a>
 
-      <ul class="menu-items mobile-menu-items" id="mobile-menu-items">
-        <div class="mobile-menu-header">
-          <i class="fa-solid fa-x" id="exit-burger-menu"></i>
-        </div>
-        <a href=""
-          ><li>solutions</li>
-          <i class="fa-solid fa-arrow-right"></i
-        ></a>
-        <a href=""
-          ><li>products</li>
-          <i class="fa-solid fa-arrow-right"></i
-        ></a>
-        <a href=""
-          ><li>rentals</li>
-          <i class="fa-solid fa-arrow-right"></i
-        ></a>
-        <a href="">
-          <li>industries</li>
-          <i class="fa-solid fa-arrow-right"></i
-        ></a>
-        <a href=""
-          ><li>education & training</li>
-          <i class="fa-solid fa-arrow-right"></i
-        ></a>
-        <a href=""
-          ><li>company info</li>
-          <i class="fa-solid fa-arrow-right"></i
-        ></a>
-
-        <ul class="section-nav mobile-section-nav">
-          <a>
-            <li>
-              <i class="fa-solid fa-tower-cell"></i>
-              Find a Rep
-            </li>
-          </a>
-          <a>
-            <li>
-              <i class="fa-solid fa-cart-shopping"></i>
-              Parts Store
-            </li>
-          </a>
+        <ul class="menu-items hide-mobile">
+          <div class="mobile menu-header">
+            <i class="fa-solid fa-x" id="exit-burger-menu"></i>
+          </div>
+          <a href=""><li>solutions</li></a>
+          <a href=""><li>products</li></a>
+          <a href=""><li>rentals</li></a>
+          <a href=""> <li>industries</li></a>
+          <a href=""><li>education & training</li></a>
+          <a href=""><li>company info</li></a>
         </ul>
-      </ul>
-      <a class="logo-link" href="/index.html"
-        ><img
-          src="/assets/images/logo/logo.svg"
-          alt="logo"
-          id="xng-logo-header"
-          class="logo-img"
-      /></a>
-
-      <ul class="menu-items">
-        <a href=""><li>solutions</li></a>
-        <a href=""><li>products</li></a>
-        <a href=""><li>rentals</li></a>
-        <a href=""> <li>industries</li></a>
-        <a href=""><li>education & training</li></a>
-        <a href=""><li>company info</li></a>
-        <a href="">
-          <li id="search">
-            search <i class="fa-solid fa-magnifying-glass"></i></li
-        ></a>
-      </ul>
-      <button id="search-mobile">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+        <button id="search">
+          <p class="search hide-mobile">search</p>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
     </header>
   </body>
 </html>
