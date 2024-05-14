@@ -17,59 +17,69 @@
       src="https://kit.fontawesome.com/03658ce1f8.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./home.js" defer></script>
   </head>
+
   <body>
-    <header class="header">
-      <article class="home-article">
-        <p>
-          Cleaver-Brooks ClearFire<i class="fa-regular fa-registered"></i>-CE
-          Condensing Boiler Named Most Valuable Product of the Year by Industry
-          Professionals.
-        </p>
-        <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-      </article>
+    <input
+      style="margin: 0; visibility: hidden; position: absolute"
+      type="checkbox"
+      name="burger-menu-check"
+      id="burger-menu-check"
+    />
+    <div class="container">
+      <header class="header">
+        <article class="home-article">
+          <p>
+            Cleaver-Brooks ClearFire<i class="fa-regular fa-registered"></i>-CE
+            Condensing Boiler Named Most Valuable Product of the Year by
+            Industry Professionals.
+          </p>
+          <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
 
-      <ul class="section-nav hide-mobile">
-        <a>
-          <li>
-            <i class="fa-solid fa-tower-cell"></i>
-            Find a Rep
-          </li>
-        </a>
-        <a>
-          <li>
-            <i class="fa-solid fa-cart-shopping"></i>
-            Parts Store
-          </li>
-        </a>
-      </ul>
-      <div class="main-header">
-        <i id="burger-menu" class="mobile fa-solid fa-bars"></i>
-        <a class="logo-link" href="/index.html"
-          ><img
-            src="./assets/images/logo/logo.svg"
-            alt="logo"
-            id="xng-logo-header"
-            class="logo-img"
-        /></a>
-
-        <ul class="menu-items hide-mobile">
-          <div class="mobile menu-header">
-            <i class="fa-solid fa-x" id="exit-burger-menu"></i>
-          </div>
-          <a href=""><li>solutions</li></a>
-          <a href=""><li>products</li></a>
-          <a href=""><li>rentals</li></a>
-          <a href=""> <li>industries</li></a>
-          <a href=""><li>education & training</li></a>
-          <a href=""><li>company info</li></a>
+        <ul class="section-nav hide-mobile">
+          <a>
+            <li>
+              <i class="fa-solid fa-tower-cell"></i>
+              Find a Rep
+            </li>
+          </a>
+          <a>
+            <li>
+              <i class="fa-solid fa-cart-shopping"></i>
+              Parts Store
+            </li>
+          </a>
         </ul>
-        <button id="search">
-          <p class="search hide-mobile">search</p>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-    </header>
+        <div class="main-header">
+          <label for="burger-menu-check">
+            <i id="burger-menu" class="mobile fa-solid fa-bars"></i>
+          </label>
+          <a class="logo-link" href="/index.html"
+            ><img
+              src="./assets/images/logo/logo.svg"
+              alt="logo"
+              id="xng-logo-header"
+              class="logo-img"
+          /></a>
+
+          <ul class="menu-items hide-mobile">
+            <label for="burger-menu-check" class="mobile menu-header">
+              <i class="fa-solid fa-x" id="exit-burger-menu"></i>
+            </label>
+            <a href=""><li>solutions</li></a>
+            <a href=""><li>products</li></a>
+            <a href=""><li>rentals</li></a>
+            <a href=""> <li>industries</li></a>
+            <a href=""><li>education & training</li></a>
+            <a href=""><li>company info</li></a>
+          </ul>
+          <button id="search">
+            <p class="search hide-mobile">search</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
