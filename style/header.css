@@ -1,34 +1,30 @@
 .mobile {
   display: none;
 }
-.fa-solid.fa-bars {
-  display: none;
-}
-#xng-logo-header {
-  width: 185px;
-  height: auto;
-  margin-right: 40px;
-  padding-top: 10px;
-}
+
 .header {
   display: flex;
   flex-direction: column;
   width: 100%;
   border-bottom: 5px solid var(--primary-color-brand-03);
-  font-size: 16px;
-  font-family: "Helvetica Neue bold";
   min-height: 95px;
 }
-.home-article {
+.notification-bar {
   display: flex;
-  font-size: 15px;
-  font-family: "Helvetica Neue Light";
-  font-weight: 600;
-
+  font-size: 0.9375rem;
   gap: 15px;
   justify-content: center;
   padding-block: 25px;
   background-color: var(--supplementary-color-ui-01);
+}
+.notification-bar a,
+.notification-bar a:visited,
+.notification-bar a:hover {
+  color: var(--text-black);
+  font-weight: 500;
+}
+.notification-bar p {
+  margin: 0;
 }
 .section-nav {
   margin: 0;
@@ -37,18 +33,8 @@
   display: flex;
   justify-content: flex-end;
   gap: 50px;
-  font-size: 14px;
-  font-family: "Helvetica Neue Medium";
-}
-.home-article a,
-.home-article a:visited,
-.home-article a:hover {
-  color: var(--text-black);
-  font-family: "Helvetica Neue Medium";
-  font-weight: 500;
-}
-.home-article p {
-  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 .section-nav a:nth-child(2) {
   margin-right: 90px;
@@ -60,6 +46,12 @@
   padding-inline: 80px;
   width: 100%;
   justify-content: space-between;
+}
+#xng-logo-header {
+  width: 185px;
+  height: auto;
+  margin-right: 40px;
+  padding-top: 10px;
 }
 .logo-link {
   display: flex;
@@ -82,6 +74,10 @@
   border-bottom: 2px solid;
   border-color: transparent;
 }
+.menu-items li {
+  font-weight: 700;
+  color: var(--primary-color-brand-01);
+}
 .menu-items a:hover {
   border-bottom: 2px solid var(--primary-color-brand-01);
 }
@@ -94,21 +90,19 @@
   align-items: center;
   justify-content: space-between;
   transition: 1s border-bottom;
-  color: var(--primary-color-brand-01);
-
   padding-block: 35px 18px;
   border-bottom: 2px solid transparent;
   gap: 10px;
 }
 #search p {
-  font-family: "Helvetica Neue bold";
-  font-size: 16px;
+  color: var(--primary-color-brand-01);
+  font-weight: 700;
+  font-size: 1rem;
   text-transform: uppercase;
-
   margin: 0;
 }
 #search i {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--primary-color-brand-01);
   cursor: pointer;
 }
@@ -116,20 +110,29 @@
   border-bottom: 2px solid var(--primary-color-brand-01);
   cursor: pointer;
 }
+
+/* This checkbox is hidden and i use it to toggle the burger menu since should not use JS */
 #burger-menu-check:checked ~ .container .header .section-nav,
 #burger-menu-check:checked ~ .container .header .main-header .menu-items {
   display: flex;
 }
 #burger-menu-check:checked ~ .container,
-#burger-menu-check:checked ~ .container .header .home-article {
+#burger-menu-check:checked ~ .container .header .notification-bar {
   background-image: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
   );
 }
+
 @media screen and (max-width: 1020px) {
-  .home-article {
+  .hide-mobile {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+  .notification-bar {
     flex-direction: column;
     justify-content: center;
     gap: 0;
@@ -138,84 +141,9 @@
     min-height: 75px;
     padding-block: 3px;
     padding-inline: 25px;
-    font-size: 14px;
-  }
-}
-/*  */
-@media screen and (max-width: 1020px) {
-  #burger-menu {
-    font-size: 25px;
-    color: var(--primary-color-brand-01);
-    cursor: pointer;
-    transition: 2s transform;
-  }
-  #burger-menu:hover {
-    transform: rotate(180deg);
-  }
-  .hide-mobile {
-    display: none;
-  }
-  .mobile {
-    display: flex;
-  }
-  .fa-solid.fa-bars {
-    display: flex;
-  }
-  #xng-logo-header {
-    padding: 0;
-    margin: 0;
-
-    width: 165px;
-  }
-  .main-header {
-    padding-inline: 4%;
-    height: 70px;
-  }
-  #search {
-    padding-block: 0;
-  }
-  #search i {
-    font-size: 25px;
-  }
-  .menu-header {
-    height: 65px;
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid var(--primary-color-brand-03);
-  }
-  .menu-header i {
-    margin-left: 25px;
-    font-size: 25px;
-    color: var(--primary-color-brand-01);
-    cursor: pointer;
-  }
-  .menu-items {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    width: 90%;
-    height: 455px;
-  }
-  .menu-items a {
-    border-bottom: 2px solid var(--supplementary-color-ui-01);
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    font-size: 14px;
-    height: 65px;
-    padding: 0;
-  }
-
-  .menu-items a i {
-    margin-right: 20px;
+    font-size: 0.875rem;
   }
   .section-nav {
-    color: var(--primary-color-brand-01);
     display: none;
     flex-direction: column;
     background-color: #f9f8f6;
@@ -226,7 +154,7 @@
     left: 0;
     padding: 0;
     gap: 0;
-    font-size: 13px;
+    font-size: 0.8125rem;
     text-transform: capitalize;
   }
   .section-nav a {
@@ -242,8 +170,73 @@
   .section-nav li {
     color: var(--primary-color-brand-01);
   }
+  .main-header {
+    padding-inline: 4%;
+    height: 70px;
+  }
+  #burger-menu {
+    font-size: 1.5625rem;
+    color: var(--primary-color-brand-01);
+    cursor: pointer;
+    transition: 2s transform;
+  }
+  #burger-menu:hover {
+    transform: rotate(180deg);
+  }
+
+  .menu-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    height: 455px;
+  }
+  .menu-header {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--primary-color-brand-03);
+  }
+  .menu-header i {
+    margin-left: 25px;
+    font-size: 1.5625rem;
+    color: var(--primary-color-brand-01);
+    cursor: pointer;
+  }
+  .menu-items a {
+    border-bottom: 2px solid var(--supplementary-color-ui-01);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-size: 0.875rem;
+    height: 65px;
+    padding: 0;
+  }
+
+  .menu-items a i {
+    margin-right: 20px;
+    font-size: 0.875rem;
+  }
+
   .menu-items li {
     margin-left: 20px;
     color: var(--primary-color-brand-01);
+  }
+
+  #xng-logo-header {
+    padding: 0;
+    margin: 0;
+    width: 165px;
+  }
+  #search {
+    padding-block: 0;
+  }
+  #search i {
+    font-size: 1.4625rem;
   }
 }

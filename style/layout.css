@@ -1,17 +1,18 @@
 * {
   box-sizing: border-box;
-  color: var(--text-black);
+}
+title {
+  text-transform: capitalize;
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", sans-serif;
 }
 a,
 a:visited,
 a:hover {
+  cursor: pointer;
   text-decoration: none;
   color: var(--primary-color-brand-01);
-  cursor: pointer;
 }
 ul {
   list-style-type: none;

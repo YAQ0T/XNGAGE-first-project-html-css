@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>XNGAGE</title>
-    <link
-      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./branding-styles.css" />
-    <link rel="stylesheet" href="./home.css" />
-    <link rel="stylesheet" href="./styles/home-style/header.css" />
-
+    <title>Xngage</title>
     <script
       src="https://kit.fontawesome.com/03658ce1f8.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
   </head>
 
   <body>
+    <!-- This checkbox is hidden and i use it to toggle the burger menu since should not use JS-->
     <input
       style="margin: 0; visibility: hidden; position: absolute"
       type="checkbox"
@@ -28,7 +26,7 @@
     />
     <div class="container">
       <header class="header">
-        <article class="home-article">
+        <article class="notification-bar">
           <p>
             Cleaver-Brooks ClearFire<i class="fa-regular fa-registered"></i>-CE
             Condensing Boiler Named Most Valuable Product of the Year by
@@ -67,12 +65,30 @@
             <label for="burger-menu-check" class="mobile menu-header">
               <i class="fa-solid fa-x" id="exit-burger-menu"></i>
             </label>
-            <a href=""><li>solutions</li></a>
-            <a href=""><li>products</li></a>
-            <a href=""><li>rentals</li></a>
-            <a href=""> <li>industries</li></a>
-            <a href=""><li>education & training</li></a>
-            <a href=""><li>company info</li></a>
+            <a href=""
+              ><li>solutions</li>
+              <i class="mobile fa-solid fa-chevron-right"></i
+            ></a>
+            <a href=""
+              ><li>products</li>
+              <i class="mobile fa-solid fa-chevron-right"></i
+            ></a>
+            <a href=""
+              ><li>rentals</li>
+              <i class="mobile fa-solid fa-chevron-right"></i
+            ></a>
+            <a href="">
+              <li>industries</li>
+              <i class="mobile fa-solid fa-chevron-right"></i
+            ></a>
+            <a href=""
+              ><li>education & training</li>
+              <i class="mobile fa-solid fa-chevron-right"></i
+            ></a>
+            <a href=""
+              ><li>company info</li>
+              <i class="mobile fa-solid fa-chevron-right"></i
+            ></a>
           </ul>
           <button id="search">
             <p class="search hide-mobile">search</p>
