@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-title {
-  text-transform: capitalize;
-}
+
 body {
   margin: 0;
 }
