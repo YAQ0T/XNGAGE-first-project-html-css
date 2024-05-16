@@ -1,7 +1,11 @@
 .mobile {
   display: none;
 }
-
+.listCard {
+  /* common style for all list card in the site*/
+  color: var(--primary-color-brand-01);
+  font-weight: 700;
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -10,12 +14,16 @@
   min-height: 95px;
 }
 .notification-bar {
+  background-color: var(--supplementary-color-ui-01);
+  display: flex;
+  justify-content: center;
+}
+.notification-bar .container {
   display: flex;
   font-size: 0.9375rem;
   gap: 15px;
   justify-content: center;
   padding-block: 25px;
-  background-color: var(--supplementary-color-ui-01);
 }
 .notification-bar a,
 .notification-bar a:visited,
@@ -27,22 +35,27 @@
   margin: 0;
 }
 .section-nav {
-  margin: 0;
-  padding-block: 11px;
   background-image: linear-gradient(var(--supplementary-color-ui-01-50), white);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.section-nav .container {
+  padding-block: 11px;
   display: flex;
   justify-content: flex-end;
   gap: 50px;
   font-size: 0.875rem;
-  font-weight: 600;
 }
-.section-nav a:nth-child(2) {
-  margin-right: 90px;
-}
+
 .main-header {
   display: flex;
-  align-items: center;
+  justify-content: center;
   box-shadow: 0 0 8px 0 var(--drop-shadow-primary);
+}
+.main-header .container {
+  display: flex;
+  align-items: center;
   padding-inline: 80px;
   width: 100%;
   justify-content: space-between;
@@ -74,10 +87,6 @@
   border-bottom: 2px solid;
   border-color: transparent;
 }
-.menu-items li {
-  font-weight: 700;
-  color: var(--primary-color-brand-01);
-}
 .menu-items a:hover {
   border-bottom: 2px solid var(--primary-color-brand-01);
 }
@@ -95,8 +104,6 @@
   gap: 10px;
 }
 #search p {
-  color: var(--primary-color-brand-01);
-  font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
   margin: 0;
@@ -112,12 +119,13 @@
 }
 
 /* This checkbox is hidden and i use it to toggle the burger menu since should not use JS */
-#burger-menu-check:checked ~ .container .header .section-nav,
-#burger-menu-check:checked ~ .container .header .main-header .menu-items {
+#burger-menu-check:checked ~ .nothing .header .section-nav .container,
+#burger-menu-check:checked ~ .nothing .header .section-nav,
+#burger-menu-check:checked ~ .nothing .header .main-header .menu-items {
   display: flex;
 }
-#burger-menu-check:checked ~ .container,
-#burger-menu-check:checked ~ .container .header .notification-bar {
+#burger-menu-check:checked ~ .nothing,
+#burger-menu-check:checked ~ .nothing .header .notification-bar {
   background-image: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -132,7 +140,7 @@
   .mobile {
     display: flex;
   }
-  .notification-bar {
+  .notification-bar .container {
     flex-direction: column;
     justify-content: center;
     gap: 0;
@@ -143,7 +151,7 @@
     padding-inline: 25px;
     font-size: 0.875rem;
   }
-  .section-nav {
+  .section-nav .container {
     display: none;
     flex-direction: column;
     background-color: #f9f8f6;
@@ -170,7 +178,7 @@
   .section-nav li {
     color: var(--primary-color-brand-01);
   }
-  .main-header {
+  .main-header .container {
     padding-inline: 4%;
     height: 70px;
   }
@@ -209,7 +217,6 @@
   }
   .menu-items a {
     border-bottom: 2px solid var(--supplementary-color-ui-01);
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -225,7 +232,6 @@
 
   .menu-items li {
     margin-left: 20px;
-    color: var(--primary-color-brand-01);
   }
 
   #xng-logo-header {
