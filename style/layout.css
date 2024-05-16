@@ -18,6 +18,13 @@ ul {
 }
 .container {
   width: 100%;
-  max-width: 2000px;
-  padding-inline: 80px;
+  max-width: 1300px;
+  padding: 20px;
+  display: flex;
+  margin: 0 auto;
+}
+@media screen and (max-width: 842px) {
+  .container {
+    padding: 10px;
+  }
 }

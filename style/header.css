@@ -1,11 +1,7 @@
 .mobile {
   display: none;
 }
-.listCard {
-  /* common style for all list card in the site*/
-  color: var(--primary-color-brand-01);
-  font-weight: 700;
-}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -13,84 +9,91 @@
   border-bottom: 5px solid var(--primary-color-brand-03);
   min-height: 95px;
 }
+
 .notification-bar {
   background-color: var(--supplementary-color-ui-01);
+}
+
+.notification-bar > div {
   display: flex;
   justify-content: center;
-}
-.notification-bar .container {
-  display: flex;
   font-size: 0.9375rem;
   gap: 15px;
-  justify-content: center;
-  padding-block: 25px;
 }
+
 .notification-bar a,
 .notification-bar a:visited,
 .notification-bar a:hover {
   color: var(--text-black);
   font-weight: 500;
 }
+
 .notification-bar p {
   margin: 0;
 }
-.section-nav {
+
+.utility-menu {
   background-image: linear-gradient(var(--supplementary-color-ui-01-50), white);
-  display: flex;
-  justify-content: center;
-  margin: 0;
 }
-.section-nav .container {
-  padding-block: 11px;
+
+.utility-menu > div {
+  padding-block: 10px;
   display: flex;
   justify-content: flex-end;
   gap: 50px;
   font-size: 0.875rem;
+  color: var(--primary-color-brand-01);
+  font-weight: 600;
 }
 
-.main-header {
-  display: flex;
-  justify-content: center;
+.main-content {
   box-shadow: 0 0 8px 0 var(--drop-shadow-primary);
 }
-.main-header .container {
-  display: flex;
-  align-items: center;
-  padding-inline: 80px;
-  width: 100%;
+
+.main-content > div {
+  min-height: 105px;
   justify-content: space-between;
 }
+
 #xng-logo-header {
   width: 185px;
   height: auto;
   margin-right: 40px;
   padding-top: 10px;
 }
+
 .logo-link {
   display: flex;
   align-items: center;
 }
-.menu-items {
+
+.main-content-menu ul {
   text-transform: uppercase;
+  margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  
   flex-wrap: wrap;
-  padding-left: 0;
   width: 100%;
 }
-.menu-items a {
-  margin: 0;
-  padding-inline: 10px;
-  transition: 1s border-bottom;
+
+.main-content-menu a {
+  padding-block: 36px 18px;
+  color: var(--primary-color-brand-01);
+  font-weight: 700;
+  transition: border-bottom 1s;
   padding-inline: 20px;
-  padding-block: 35px 18px;
-  border-bottom: 2px solid;
-  border-color: transparent;
-}
-.menu-items a:hover {
-  border-bottom: 2px solid var(--primary-color-brand-01);
+  border-bottom: 2px solid transparent;
 }
 
+.main-content-menu a:hover {
+  border-bottom: 2px solid var(--primary-color-brand-01);
+}
+#burger-menu-check{
+  margin: 0; 
+  visibility: hidden; 
+  position: absolute;
+}
 #search {
   height: min-content;
   display: flex;
@@ -98,64 +101,54 @@
   border: 0;
   align-items: center;
   justify-content: space-between;
-  transition: 1s border-bottom;
-  padding-block: 35px 18px;
+  transition: border-bottom 1s;
+  padding: 35px 0px 18px;
   border-bottom: 2px solid transparent;
   gap: 10px;
 }
+
 #search p {
   font-size: 1rem;
   text-transform: uppercase;
   margin: 0;
+  color: var(--primary-color-brand-01);
+  font-weight: 700;
 }
+
 #search i {
   font-size: 1rem;
   color: var(--primary-color-brand-01);
   cursor: pointer;
 }
+
 #search:hover {
   border-bottom: 2px solid var(--primary-color-brand-01);
   cursor: pointer;
 }
-
-/* This checkbox is hidden and i use it to toggle the burger menu since should not use JS */
-#burger-menu-check:checked ~ .nothing .header .section-nav .container,
-#burger-menu-check:checked ~ .nothing .header .section-nav,
-#burger-menu-check:checked ~ .nothing .header .main-header .menu-items {
+#burger-menu-check:checked ~ .main-content-menu {
   display: flex;
 }
-#burger-menu-check:checked ~ .nothing,
-#burger-menu-check:checked ~ .nothing .header .notification-bar {
-  background-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  );
-}
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 842px) {
   .hide-mobile {
     display: none;
   }
+
   .mobile {
     display: flex;
   }
-  .notification-bar .container {
+
+  .notification-bar > div {
     flex-direction: column;
-    justify-content: center;
     gap: 0;
-    width: 100%;
     text-align: center;
     min-height: 75px;
-    padding-block: 3px;
-    padding-inline: 25px;
     font-size: 0.875rem;
   }
-  .section-nav .container {
+
+  .utility-menu > div {
     display: none;
     flex-direction: column;
-    background-color: #f9f8f6;
-    background-image: none;
     width: 90%;
     position: fixed;
     top: 455px;
@@ -165,83 +158,76 @@
     font-size: 0.8125rem;
     text-transform: capitalize;
   }
-  .section-nav a {
+
+  .utility-menu a {
     border-bottom: 2px solid transparent;
     height: 63px;
     margin-left: 20px;
     display: flex;
     align-items: center;
   }
-  .section-nav i {
-    color: var(--primary-color-brand-01);
+
+  .main-content > div {
+    min-height: 70px;
+    align-items: center;
   }
-  .section-nav li {
-    color: var(--primary-color-brand-01);
-  }
-  .main-header .container {
-    padding-inline: 4%;
-    height: 70px;
-  }
+
   #burger-menu {
     font-size: 1.5625rem;
     color: var(--primary-color-brand-01);
     cursor: pointer;
-    transition: 2s transform;
+    transition: transform 2s;
   }
+
   #burger-menu:hover {
     transform: rotate(180deg);
   }
-
-  .menu-items {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
+  
+  .main-content-menu{
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: white;
     width: 90%;
-    height: 455px;
   }
-  .menu-header {
+  .menu-header{
     height: 65px;
     display: flex;
     align-items: center;
     border-bottom: 3px solid var(--primary-color-brand-03);
   }
-  .menu-header i {
-    margin-left: 25px;
+  .menu-header i{
     font-size: 1.5625rem;
     color: var(--primary-color-brand-01);
+    margin-left: 20px;
     cursor: pointer;
   }
-  .menu-items a {
-    border-bottom: 2px solid var(--supplementary-color-ui-01);
-    justify-content: space-between;
-    align-items: center;
+  .main-content-menu ul{
     display: flex;
-    font-size: 0.875rem;
-    height: 65px;
-    padding: 0;
-  }
-
-  .menu-items a i {
-    margin-right: 20px;
-    font-size: 0.875rem;
-  }
-
-  .menu-items li {
-    margin-left: 20px;
-  }
+    flex-direction: column;
+    height: 455px;
+    
+ }
+ .main-content-menu a{
+  padding: 20px;
+ }
+ .main-content li{
+  display: flex;
+  justify-content: space-between;
+ }
 
   #xng-logo-header {
     padding: 0;
     margin: 0;
     width: 165px;
   }
+
   #search {
     padding-block: 0;
   }
+
   #search i {
     font-size: 1.4625rem;
   }

@@ -17,92 +17,71 @@
   </head>
 
   <body>
-    <!-- This checkbox is hidden and i use it to toggle the burger menu since should not use JS-->
-    <input
-      style="margin: 0; visibility: hidden; position: absolute"
-      type="checkbox"
-      name="burger-menu-check"
-      id="burger-menu-check"
-    />
-    <!--div class nothing just to be able to use the burger menu on toggle without js when i can use js i will delete it.-->
-    <div class="nothing">
-      <header class="header">
-        <article class="notification-bar">
-          <div class="container">
-            <p>
-              Cleaver-Brooks ClearFire<i class="fa-regular fa-registered"></i
-              >-CE Condensing Boiler Named Most Valuable Product of the Year by
-              Industry Professionals.
-            </p>
-            <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
-
-        <ul class="section-nav hide-mobile">
-          <div class="container">
-            <a>
-              <li class="listCard">
-                <i class="fa-solid fa-tower-cell"></i>
-                Find a Rep
-              </li>
-            </a>
-            <a>
-              <li class="listCard">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Parts Store
-              </li>
-            </a>
-          </div>
-        </ul>
-        <div class="main-header">
-          <div class="container">
-            <label for="burger-menu-check">
-              <i id="burger-menu" class="mobile fa-solid fa-bars"></i>
-            </label>
-            <a class="logo-link" href="/index.html"
-              ><img
-                src="./assets/images/logo/logo.svg"
-                alt="logo"
-                id="xng-logo-header"
-                class="logo-img"
-            /></a>
-
-            <ul class="menu-items hide-mobile">
-              <label for="burger-menu-check" class="mobile menu-header">
+    <header class="header">
+      <div class="notification-bar">
+        <div class="container">
+          <p>
+            Cleaver-Brooks ClearFire<i class="fa-regular fa-registered"></i>-CE
+            Condensing Boiler Named Most Valuable Product of the Year by
+            Industry Professionals.
+          </p>
+          <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="utility-menu hide-mobile">
+        <div class="container">
+          <a>
+            <i class="fa-solid fa-tower-cell"></i>
+            Find a Rep
+          </a>
+          <a>
+            <i class="fa-solid fa-cart-shopping"></i>
+            Parts Store
+          </a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="container">
+          <label for="burger-menu-check">
+            <i id="burger-menu" class="mobile fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" name="burger-menu-check" id="burger-menu-check"/>    
+          <a class="logo-link" href="/index.html">
+            <img src="./assets/images/logo/logo.svg" alt="logo" id="xng-logo-header" class="logo-img"/>
+          </a>
+          <div class="main-content-menu hide-mobile">
+            <div class="mobile menu-header">
+              <label for="burger-menu-check">
                 <i class="fa-solid fa-x" id="exit-burger-menu"></i>
               </label>
-              <a href=""
-                ><li class="listCard">solutions</li>
-                <i class="mobile fa-solid fa-chevron-right"></i
-              ></a>
-              <a href=""
-                ><li class="listCard">products</li>
-                <i class="mobile fa-solid fa-chevron-right"></i
-              ></a>
-              <a href=""
-                ><li class="listCard">rentals</li>
-                <i class="mobile fa-solid fa-chevron-right"></i
-              ></a>
+            </div>
+            <ul class="nav">
               <a href="">
-                <li class="listCard">industries</li>
-                <i class="mobile fa-solid fa-chevron-right"></i
-              ></a>
-              <a href=""
-                ><li class="listCard">education & training</li>
-                <i class="mobile fa-solid fa-chevron-right"></i
-              ></a>
-              <a href=""
-                ><li class="listCard">company info</li>
-                <i class="mobile fa-solid fa-chevron-right"></i
-              ></a>
+                <li>solutions <i class="mobile fa-solid fa-chevron-right"></i></li>
+              </a>
+              <a href="">
+                <li>products <i class="mobile fa-solid fa-chevron-right"></i></li>
+              </a>
+              <a href="">
+                <li>rentals <i class="mobile fa-solid fa-chevron-right"></i></li>
+              </a>
+              <a href="">
+                <li>industries <i class="mobile fa-solid fa-chevron-right"></i></li>
+              </a>
+              <a href="">
+                <li>education & training <i class="mobile fa-solid fa-chevron-right"></i></li>
+              </a>
+              <a href="">
+                <li>company info <i class="mobile fa-solid fa-chevron-right"></i></li>
+              </a>
             </ul>
-            <button id="search">
-              <p class="search hide-mobile listCard">search</p>
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
           </div>
+          <button id="search">
+            <p class="search hide-mobile">search</p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   </body>
 </html>
