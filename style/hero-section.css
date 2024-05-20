@@ -1,0 +1,39 @@
+.hero-banner{
+    background-image: url('../assets/images/hero/hero-XNGAGE-image.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.hero-banner > div{
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-inverse);
+}
+.hero-banner h1{
+    text-transform: capitalize;
+    font-size: 3.875rem;
+    max-width: 700px;
+    text-align: center;
+}
+.hero-banner h1 > span{
+    display: block;
+}
+.hero-banner button{
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: transparent;
+    color: var(--text-inverse);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    width: 270px;
+    height: 55px;
+    letter-spacing: 2px;
+
+}
+@media screen and (max-width: 900px) {
+    .hero-banner h1{
+        font-size: 2rem;
+    }
+}
