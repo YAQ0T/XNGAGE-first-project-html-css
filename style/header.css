@@ -41,7 +41,7 @@
   color: var(--primary-color-brand-01);
   font-weight: 600;
 }
-.utility-menu a{
+.utility-menu a {
   padding-inline: 20px;
 }
 .main-content {
@@ -51,6 +51,7 @@
 .main-content > div {
   min-height: 105px;
   justify-content: space-between;
+  position: relative;
 }
 
 #xng-logo-header {
@@ -73,7 +74,7 @@
   flex-wrap: wrap;
 }
 
-.main-content-menu a {
+.main-content-menu li {
   padding: 35px 20px 18px;
   color: var(--primary-color-brand-01);
   font-weight: 700;
@@ -81,14 +82,15 @@
   border-bottom: 2px solid transparent;
 }
 
-.main-content-menu a:hover {
-  border-color:var(--primary-color-brand-01);
+.main-content-menu li:hover {
+  border-color: var(--primary-color-brand-01);
 }
-#burger-menu-check{
-  margin: 0; 
+
+#burger-menu-check {
+  margin: 0;
   height: 0;
   width: 0;
-  visibility: hidden; 
+  visibility: hidden;
   position: absolute;
 }
 #search {
@@ -103,7 +105,6 @@
   border-bottom: 2px solid transparent;
   gap: 10px;
   color: var(--primary-color-brand-01);
-
 }
 
 #search p {
@@ -119,14 +120,107 @@
 }
 
 #search:hover {
-  border-color:var(--primary-color-brand-01);
+  border-color: var(--primary-color-brand-01);
   cursor: pointer;
 }
-#burger-menu-check:checked ~ .main-content-menu  {
+#burger-menu-check:checked ~ .main-content-menu {
   display: flex;
 }
 
+.main-content-menu li#products:hover .menu-items {
+  opacity: 1;
+  display: flex;
+}
+.menu-items {
+  transition: 1s opacity;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: var(--text-inverse);
+  width: 100%;
+  height: 550px;
+}
+.menu-items > div {
+  padding-block: 0;
+  position: relative;
+}
+.sup-menu {
+  position: absolute;
+  padding-block: 20px;
+  width: 95%;
+  height: 550px;
+  border-left: 2px solid var(--supplementary-color-ui-01);
+}
+.sup-menu.menu-items-lvl1 {
+  border: 0;
+  width: 100%;
+}
+.sup-menu.menu-items-lvl2 {
+  top: 0;
+  left: 33%;
+  width: 66%;
+  display: none;
+  opacity: 0;
+  transition: 1s opacity;
+}
+.sup-menu.menu-items-lvl3 {
+  top: 0;
+  left: 50%;
+  width: 50%;
+  display: none;
+  opacity: 0;
+  transition: 1s opacity;
+}
+.menu-items ul {
+  display: flex;
+  flex-direction: column;
+}
+.menu-items ul li {
+  padding: 12px 20px;
+  border: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.menu-items ul li:hover > a {
+  color: var(--primary-color-brand-02);
+}
 
+.menu-items .figure figure {
+  margin: 0;
+}
+.menu-items .figure {
+  width: 440px;
+  background-color: var(--support-color-five);
+}
+.menu-items .figure figcaption {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--primary-color-brand-01);
+  text-transform: none;
+  padding: 35px 25px;
+}
+.menu-items .figure a {
+  color: var(--primary-color-brand-02);
+  border: 0;
+  padding-left: 30px;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
+.menu-items figure img {
+  width: 440px;
+  height: 300px;
+}
+#boilers:hover .sup-menu.menu-items-lvl2 {
+  display: block;
+  opacity: 1;
+}
+#firetube:hover .sup-menu.menu-items-lvl3 {
+  display: block;
+  opacity: 1;
+}
 @media screen and (max-width: 900px) {
   .hide-mobile {
     display: none;
@@ -142,7 +236,7 @@
     text-align: center;
     font-size: 0.875rem;
   }
-  .utility-menu{
+  .utility-menu {
     background-color: var(--support-color-five);
     background-image: none;
   }
@@ -176,8 +270,8 @@
   #burger-menu:hover {
     transform: rotate(180deg);
   }
-  
-  .main-content-menu{
+
+  .main-content-menu {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -186,31 +280,31 @@
     background-color: white;
     width: 90%;
   }
-  .menu-header{
+  .menu-header {
     height: 65px;
     display: flex;
     align-items: center;
     border-bottom: 3px solid var(--primary-color-brand-03);
   }
-  .menu-header i{
+  .menu-header i {
     font-size: 1.5625rem;
     color: var(--primary-color-brand-01);
     margin-left: 20px;
     cursor: pointer;
   }
-  .main-content-menu ul{
+  .main-content-menu ul {
     display: flex;
     flex-direction: column;
     height: 455px;
     justify-content: space-between;
- }
- .main-content-menu a{
-  padding: 20px;
- }
- .main-content li{
-  display: flex;
-  justify-content: space-between;
- }
+  }
+  .main-content-menu a {
+    padding: 20px;
+  }
+  .main-content li {
+    display: flex;
+    justify-content: space-between;
+  }
 
   #xng-logo-header {
     padding: 0;

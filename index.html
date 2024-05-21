@@ -1,111 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xngage</title>
-    <script
-      src="https://kit.fontawesome.com/03658ce1f8.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo/logo.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./style/index.css" />
-    <script src="./script.js" defer></script>
-  </head>
 
-  <body>
-    <div id="overlay"></div>
-    <header class="header">
-      <div class="notification-bar">
-        <div class="container">
-          <p>
-            Cleaver-Brooks ClearFire<i class="fa-regular fa-registered"></i>-CE
-            Condensing Boiler Named Most Valuable Product of the Year by
-            Industry Professionals.
-          </p>
-          <a href="./pages/company info.html">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xngage</title>
+  <script src="https://kit.fontawesome.com/03658ce1f8.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./assets/images/logo/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="./style/index.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <header class="header">
+    <div class="notification-bar">
+      <div class="container">
+        <p>
+          Cleaver-Brooks ClearFire<i class="far fa-registered"></i>-CE
+          Condensing Boiler Named Most Valuable Product of the Year by
+          Industry Professionals.
+        </p>
+        <a href="./pages/company info.html">Learn More <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="utility-menu hide-mobile">
-        <div class="container">
-          <a href="./index.html">
-            <i class="fa-solid fa-tower-cell"></i>
-            Find a Rep
-          </a>
-          <a href="./index.html">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Parts Store
-          </a>
-        </div>
+    </div>
+    <nav class="utility-menu hide-mobile">
+      <div class="container">
+        <a href="./index.html">
+          <i class="fas fa-tower-cell"></i>
+          Find a Rep
+        </a>
+        <a href="./index.html">
+          <i class="fas fa-cart-shopping"></i>
+          Parts Store
+        </a>
       </div>
-      <div class="main-content">
-        <div class="container">
-          <label for="burger-menu-check">
-            <i id="burger-menu" class="mobile fa-solid fa-bars"></i>
-          </label>
-          <input type="checkbox" name="burger-menu-check" id="burger-menu-check"/>    
-          <a class="logo-link" href="./index.html">
-            <img src="./assets/images/logo/logo.svg" alt="logo" id="xng-logo-header" class="logo-img"/>
-          </a>
-          <div class="main-content-menu hide-mobile">
-            <div class="mobile menu-header">
-              <label for="burger-menu-check" id="exit-burger-menu">
-                <i class="fa-solid fa-x"></i>
-              </label>
-            </div>
-            <ul class="nav">
-              <a href="./pages/solution.html">
-                <li>solutions <i class="mobile fa-solid fa-chevron-right"></i></li>
-              </a>
-              <a href="./pages/products.html">
-                <li>products <i class="mobile fa-solid fa-chevron-right"></i></li>
-              </a>
-              <a href="./pages/rentals.html">
-                <li>rentals <i class="mobile fa-solid fa-chevron-right"></i></li>
-              </a>
-              <a href="./pages/industries.html">
-                <li>industries <i class="mobile fa-solid fa-chevron-right"></i></li>
-              </a>
-              <a href="./pages/education & training.html">
-                <li>education & training <i class="mobile fa-solid fa-chevron-right"></i></li>
-              </a>
-              <a href="./pages/company info.html">
-                <li>company info <i class="mobile fa-solid fa-chevron-right"></i></li>
-              </a>
-            </ul>
-            <!--we do duplicates just for now-->
-            <div class="utility-menu mobile">
-              <div class="container">
-                <a>
-                  <i class="fa-solid fa-tower-cell"></i>
-                  Find a Rep
-                </a>
-                <a>
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  Parts Store
-                </a>
-              </div>
-            </div>
-            <!--end-->
+    </nav>
+    <div class="main-content">
+      <div class="container">
+        <label for="burger-menu-check">
+          <i id="burger-menu" class="mobile fas fa-bars"></i>
+        </label>
+        <input type="checkbox" name="burger-menu-check" id="burger-menu-check" />
+        <a class="logo-link" href="./index.html">
+          <img src="./assets/images/logo/logo.svg" alt="Logo" id="xng-logo-header" class="logo-img" />
+        </a>
+        <nav class="main-content-menu hide-mobile">
+          <div class="mobile menu-header">
+            <label for="burger-menu-check" id="exit-burger-menu">
+              <i class="fas fa-times"></i>
+            </label>
           </div>
-          <button id="search">
-            <p class="search hide-mobile">search</p>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
+          <ul class="nav">
+            <li><a href="./pages/solution.html">solutions <i class="mobile fas fa-chevron-right"></i></a></li>
+            <li id="products"><a href="./pages/products.html">products <i class="mobile fas fa-chevron-right"></i></a>
+              <div class="menu-items hide-mobile">
+                <div class="container">
+                  <div class="menu-items-lvl1 sup-menu">
+                    <ul>
+                      <li id="boilers">
+                        <a href="#">
+                          boilers
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="menu-items-lvl2 sup-menu">
+                          <ul>
+                            <li id="firetube">
+                              <a href="#">
+                                firetube
+                                <i class="fas fa-arrow-right"></i>
+                              </a>
+                              <div class="menu-items-lvl3 sup-menu">
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      CBEX dryback elite
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      CBEX elite
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      CBEX elite (1,300 - 2,200 HP)
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      CBEX premium
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      CBLE
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      4WI
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      CBR
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      4WG
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      ICB
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      CBL
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      CB
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      ohio special
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="#">
+                                flexible watertube
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                modular hydronic
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                modular steam
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                HRSG
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                waste heat
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                electric
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                skid mounted boiler solutions
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#">
+                          burners
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Controls
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          heat recovery
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          water systems
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          exhaust solutions
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          parts & service
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          product index
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          product solutions map
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          products by need
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="figure">
+                  <figure>
+                    <figcaption>Looking for more information?</figcaption>
+                    <img src="./assets/images/menu/boiler-menu.png" alt="boiler-menu" />
+                  </figure>
+                  <a href="./index.html">find a rep near you
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+            </li>
+            <li><a href="./pages/rentals.html">rentals <i class="mobile fas fa-chevron-right"></i></a></li>
+            <li><a href="./pages/industries.html">industries <i class="mobile fas fa-chevron-right"></i></a></li>
+            <li><a href="./pages/education & training.html">education & training <i
+                  class="mobile fas fa-chevron-right"></i></a></li>
+            <li><a href="./pages/company info.html">company info <i class="mobile fas fa-chevron-right"></i></a></li>
+          </ul>
+          <div class="utility-menu mobile">
+            <div class="container">
+              <a href="#">
+                <i class="fas fa-tower-cell"></i>
+                Find a Rep
+              </a>
+              <a href="#">
+                <i class="fas fa-cart-shopping"></i>
+                Parts Store
+              </a>
+            </div>
+          </div>
+        </nav>
+        <button id="search">
+          <p class="search hide-mobile">search</p>
+          <i class="fas fa-search"></i>
+        </button>
       </div>
-    </header>
-    <main>
-      <section class="hero-banner">
-        <div class="container">
-          <h1><span>comprehensive</span> boiler room solutions</h1>
-          <button id="learn-more">learn more</button>
-        </div>
-      </section>
-    </main>
-  </body>
+    </div>
+  </header>
+  <main>
+    <section class="hero-banner">
+      <div class="container">
+        <h1><span>comprehensive</span> boiler room solutions</h1>
+        <button id="learn-more">learn more</button>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
