@@ -128,19 +128,33 @@
 }
 
 .main-content-menu li#products:hover .menu-items {
+  visibility: visible;
   opacity: 1;
-  display: flex;
 }
-.menu-items {
-  transition: 1s opacity;
-  opacity: 0;
-  display: none;
+.main-content-menu li#products:hover .menu-items-lvl1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-content-menu ul li::before {
+  content: "";
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
   position: absolute;
-  top: calc(100% + 5px);
+  top: calc(100% - 30px); /*30px is padding height*/
+}
+
+.menu-items {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 5px); /* 5px is boreder size*/
   left: 0;
   background-color: var(--text-inverse);
   width: 100%;
   height: 550px;
+  transition: 1s opacity;
 }
 .menu-items > div {
   padding-block: 0;
@@ -152,26 +166,22 @@
   width: 95%;
   height: 550px;
   border-left: 2px solid var(--supplementary-color-ui-01);
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s opacity;
 }
 .sup-menu.menu-items-lvl1 {
-  border: 0;
-  width: 100%;
+  width: calc(100% - 440px);
+  left: 0;
 }
 .sup-menu.menu-items-lvl2 {
-  top: 0;
   left: 33%;
   width: 66%;
-  display: none;
-  opacity: 0;
-  transition: 1s opacity;
 }
 .sup-menu.menu-items-lvl3 {
-  top: 0;
   left: 50%;
   width: 50%;
-  display: none;
-  opacity: 0;
-  transition: 1s opacity;
 }
 .menu-items ul {
   display: flex;
@@ -183,6 +193,7 @@
   font-size: 1rem;
   text-transform: capitalize;
 }
+
 .menu-items ul li:hover > a {
   color: var(--primary-color-brand-02);
 }
@@ -191,6 +202,7 @@
   margin: 0;
 }
 .menu-items .figure {
+  margin-left: auto;
   width: 440px;
   background-color: var(--support-color-five);
 }
@@ -213,12 +225,9 @@
   width: 440px;
   height: 300px;
 }
-#boilers:hover .sup-menu.menu-items-lvl2 {
-  display: block;
-  opacity: 1;
-}
+#boilers:hover .sup-menu.menu-items-lvl2,
 #firetube:hover .sup-menu.menu-items-lvl3 {
-  display: block;
+  visibility: visible;
   opacity: 1;
 }
 @media screen and (max-width: 900px) {
