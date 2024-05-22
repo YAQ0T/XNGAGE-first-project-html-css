@@ -8,11 +8,9 @@
   <script src="https://kit.fontawesome.com/03658ce1f8.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="./assets/images/logo/logo.svg" type="image/x-icon" />
   <link rel="stylesheet" href="./style/index.css" />
-  <script src="./script.js" defer></script>
 </head>
 
 <body>
-  <div id="overlay"></div>
   <header class="header">
     <div class="notification-bar">
       <div class="container">
@@ -42,6 +40,7 @@
           <i id="burger-menu" class="mobile fas fa-bars"></i>
         </label>
         <input type="checkbox" name="burger-menu-check" id="burger-menu-check" />
+        <div id="overlay"></div>
         <a class="logo-link" href="./index.html">
           <img src="./assets/images/logo/logo.svg" alt="Logo" id="xng-logo-header" class="logo-img" />
         </a>
@@ -221,7 +220,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="figure">
+                <div class="figure hide-mobile">
                   <figure>
                     <figcaption>Looking for more information?</figcaption>
                     <img src="./assets/images/menu/boiler-menu.png" alt="boiler-menu" />

@@ -139,10 +139,10 @@
 .main-content-menu ul li::before {
   content: "";
   height: 50px;
-  width: 100%;
+  width: 150px;
   background-color: transparent;
   position: absolute;
-  top: calc(100% - 30px); /*30px is padding height*/
+  top: calc(100% - 30px);
 }
 
 .menu-items {
@@ -188,7 +188,6 @@
   flex-direction: column;
 }
 .menu-items ul li {
-  padding: 12px 20px;
   border: 0;
   font-size: 1rem;
   text-transform: capitalize;
@@ -198,13 +197,13 @@
   color: var(--primary-color-brand-02);
 }
 
-.menu-items .figure figure {
-  margin: 0;
-}
 .menu-items .figure {
   margin-left: auto;
   width: 440px;
   background-color: var(--support-color-five);
+}
+.menu-items .figure figure {
+  margin: 0;
 }
 .menu-items .figure figcaption {
   font-size: 2.25rem;
@@ -307,14 +306,75 @@
     height: 455px;
     justify-content: space-between;
   }
-  .main-content-menu a {
-    padding: 20px;
+  .main-content-menu li {
+    padding: 0;
+    position: relative;
   }
-  .main-content li {
+  .main-content li a {
+    padding: 20px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
   }
 
+  .main-content-menu > ul > li:hover > a > i {
+    transform: rotate(90deg);
+    transition: 1s transform;
+  }
+  .menu-items .sup-menu li {
+    padding: 0;
+    border-bottom: 2px solid transparent;
+    transition: 1s border-bottom;
+  }
+  .menu-items .sup-menu li:hover {
+    border-color: var(--primary-color-brand-01);
+  }
+  .menu-items {
+    display: flex;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: calc(100% + 2px);
+    height: 620px;
+    width: 100%;
+  }
+  .menu-items .sup-menu {
+    height: 620px;
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+  .menu-items-lvl1 {
+    position: absolute;
+    z-index: 2;
+  }
+  .menu-items-lvl1 ul {
+    width: 75%;
+    margin-left: 25%;
+    z-index: 1;
+  }
+  .menu-items-lvl1 > ul > li:hover > a > i {
+    transform: rotate(90deg);
+    transition: 1s transform;
+  }
+  .menu-items ul {
+    height: auto;
+  }
+  .sup-menu.menu-items-lvl2 {
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+  }
+  .menu-items-lvl2 ul {
+    width: 50%;
+    margin-left: 50%;
+    z-index: 2;
+  }
+
+  .sup-menu.menu-items-lvl3 {
+    display: none;
+  }
   #xng-logo-header {
     padding: 0;
     margin: 0;
