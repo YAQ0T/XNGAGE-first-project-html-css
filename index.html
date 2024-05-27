@@ -39,7 +39,8 @@
         <label for="burger-menu-check">
           <i id="burger-menu" class="mobile fas fa-bars"></i>
         </label>
-        <input type="checkbox" name="burger-menu-check" id="burger-menu-check" />
+        <input type="checkbox" name="burger-menu-check" id="burger-menu-check" aria-hidden="true"
+          class="hidden-input" />
         <div id="overlay"></div>
         <a class="logo-link" href="./index.html">
           <img src="./assets/images/logo/logo.svg" alt="Logo" id="xng-logo-header" class="logo-img" />
@@ -51,35 +52,48 @@
             </label>
           </div>
           <ul class="nav">
-            <li><a href="./pages/solution.html">solutions <i class="mobile fas fa-chevron-right"></i></a></li>
-            <li id="products"><a href="./pages/products.html">products <i class="mobile fas fa-chevron-right"></i></a>
+            <li>
+              <a href="./pages/solution.html">solutions</a>
+              <label class="mobile">
+                <i class="fas fa-chevron-right"></i>
+              </label>
+            </li>
+            <li id="products">
+              <a href="./pages/products.html">products</a>
+              <label for="sup-menu-check" class="mobile">
+                <i class="fas fa-chevron-right"></i>
+              </label>
+              <input type="checkbox" name="sup-menu-check" id="sup-menu-check" class="hidden-input" aria-hidden="true">
               <div class="menu-items hide-mobile">
                 <div class="container">
+                  <label class="sup-menu-header mobile" for="sup-menu-check"><i class="fa-solid fa-arrow-left"></i>
+                    products</label>
                   <div class="menu-items-lvl1 sup-menu">
                     <ul>
+
                       <li id="boilers">
+                        <input type="checkbox" name="sup-menu-lvl2-check" id="sup-menu-lvl2-check" class="hidden-input"
+                          aria-hidden="true">
                         <a href="#">
                           boilers
-                          <i class="fas fa-arrow-right"></i>
                         </a>
+                        <label for="sup-menu-lvl2-check">
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                         <div class="menu-items-lvl2 sup-menu">
                           <ul>
                             <li id="firetube">
                               <a href="#">
                                 firetube
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-arrow-right hide-mobile"></i>
                               </a>
                               <div class="menu-items-lvl3 sup-menu">
                                 <ul>
                                   <li>
-                                    <a href="#">
-                                      CBEX dryback elite
-                                    </a>
+                                    <a href="#"> CBEX dryback elite </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      CBEX elite
-                                    </a>
+                                    <a href="#"> CBEX elite </a>
                                   </li>
                                   <li>
                                     <a href="#">
@@ -87,135 +101,106 @@
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      CBEX premium
-                                    </a>
+                                    <a href="#"> CBEX premium </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      CBLE
-                                    </a>
+                                    <a href="#"> CBLE </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      4WI
-                                    </a>
+                                    <a href="#"> 4WI </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      CBR
-                                    </a>
+                                    <a href="#"> CBR </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      4WG
-                                    </a>
+                                    <a href="#"> 4WG </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      ICB
-                                    </a>
+                                    <a href="#"> ICB </a>
                                   </li>
                                   <li>
-                                    <a href="#">
-                                      CBL
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      CB
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      ohio special
-                                    </a>
+                                    <a href="#"> CBL </a>
                                   </li>
                                 </ul>
                               </div>
                             </li>
                             <li>
-                              <a href="#">
-                                flexible watertube
-                              </a>
+                              <a href="#"> flexible watertube </a>
                             </li>
                             <li>
-                              <a href="#">
-                                modular hydronic
-                              </a>
+                              <a href="#"> modular hydronic </a>
                             </li>
                             <li>
-                              <a href="#">
-                                modular steam
-                              </a>
+                              <a href="#"> modular steam </a>
                             </li>
                             <li>
-                              <a href="#">
-                                HRSG
-                              </a>
+                              <a href="#"> HRSG </a>
                             </li>
                             <li>
-                              <a href="#">
-                                waste heat
-                              </a>
+                              <a href="#"> waste heat </a>
                             </li>
                             <li>
-                              <a href="#">
-                                electric
-                              </a>
+                              <a href="#"> electric </a>
                             </li>
                             <li>
-                              <a href="#">
-                                skid mounted boiler solutions
-                              </a>
+                              <a href="#"> skid mounted boiler solutions </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li>
-                        <a href="#">
-                          burners
-                        </a>
+                        <a href="#"> burners </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                       <li>
-                        <a href="#">
-                          Controls
-                        </a>
+                        <a href="#"> Controls </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                       <li>
-                        <a href="#">
-                          heat recovery
-                        </a>
+                        <a href="#"> heat recovery </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                       <li>
-                        <a href="#">
-                          water systems
-                        </a>
+                        <a href="#"> water systems </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                       <li>
-                        <a href="#">
-                          exhaust solutions
-                        </a>
+                        <a href="#"> exhaust solutions </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                       <li>
-                        <a href="#">
-                          parts & service
-                        </a>
+                        <a href="#"> parts & service </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                       <li>
-                        <a href="#">
-                          product index
-                        </a>
+                        <a href="#"> product index </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                       <li>
-                        <a href="#">
-                          product solutions map
-                        </a>
+                        <a href="#"> product solutions map </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                       <li>
-                        <a href="#">
-                          products by need
-                        </a>
+                        <a href="#"> products by need </a>
+                        <label>
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
                       </li>
                     </ul>
                   </div>
@@ -230,13 +215,31 @@
                   </a>
                 </div>
               </div>
-
             </li>
-            <li><a href="./pages/rentals.html">rentals <i class="mobile fas fa-chevron-right"></i></a></li>
-            <li><a href="./pages/industries.html">industries <i class="mobile fas fa-chevron-right"></i></a></li>
-            <li><a href="./pages/education & training.html">education & training <i
-                  class="mobile fas fa-chevron-right"></i></a></li>
-            <li><a href="./pages/company info.html">company info <i class="mobile fas fa-chevron-right"></i></a></li>
+            <li>
+              <a href="./pages/rentals.html">rentals</a>
+              <label class="mobile">
+                <i class="fas fa-chevron-right"></i>
+              </label>
+            </li>
+            <li>
+              <a href="./pages/industries.html">industries</a>
+              <label class="mobile">
+                <i class="fas fa-chevron-right"></i>
+              </label>
+            </li>
+            <li>
+              <a href="./pages/education & training.html">education & training</a>
+              <label class="mobile">
+                <i class="fas fa-chevron-right"></i>
+              </label>
+            </li>
+            <li>
+              <a href="./pages/company info.html">company info</a>
+              <label class="mobile">
+                <i class="fas fa-chevron-right"></i>
+              </label>
+            </li>
           </ul>
           <div class="utility-menu mobile">
             <div class="container">
@@ -263,6 +266,56 @@
       <div class="container">
         <h1><span>comprehensive</span> boiler room solutions</h1>
         <button id="learn-more">learn more</button>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <div class="who-we-are">
+          <div class="title">
+            <h2>who we are</h2>
+          </div>
+          <div class="description">
+            <p>
+              Founded in 1929, Cleaver-Brooks is a complete boiler room
+              solutions provider that helps businesses run better every day.
+              It develops hot water and steam generation products aimed at
+              integrating and optimizing the total boiler/burner/control/stack
+              exhaust system to maximize energy efficiency and reliability
+              while minimizing emissions.
+            </p>
+          </div>
+          <article class="side-info">
+            <p>
+              Our dedicated reps help you commission your system, obtain parts
+              and service, and provide product training.
+            </p>
+            <button>
+              <i class="fas fa-search"></i>
+              <span>find a rep near you</span>
+            </button>
+          </article>
+        </div>
+        <figure>
+          <figcaption>
+            <div class="container">
+              <p>prometha</p>
+              <p class="video-title">
+                boiler room intelligence at your fingertips
+              </p>
+              <p class="video-brief">
+                Ideal for any industry, Prometha offers users the ability to
+                remotely monitor boiler systems from anywhere, providing alerts
+                and actionable insights that help increase reliability,
+                efficiency, safety and sustainability in the boiler room.
+              </p>
+            </div>
+          </figcaption>
+          <iframe width="820px" height="550px"
+            src="https://www.youtube-nocookie.com/embed/qweSeVm0W6o?si=CtsB0StEVbhbQ9rr&amp;controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
       </div>
     </section>
   </main>
