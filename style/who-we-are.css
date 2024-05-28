@@ -57,7 +57,7 @@
   border: 0;
   cursor: pointer;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .who-we-are > div {
     flex-direction: column;
     height: auto;

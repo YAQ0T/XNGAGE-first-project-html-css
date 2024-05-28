@@ -61,7 +61,7 @@
 .custom-solution {
   margin-top: 60px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .solution {
     flex-direction: column;
   }
