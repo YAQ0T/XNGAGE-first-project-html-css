@@ -61,3 +61,16 @@
 .custom-solution {
   margin-top: 60px;
 }
+@media screen and (max-width: 900px) {
+  .solution {
+    flex-direction: column;
+  }
+  .solution-image {
+    display: flex;
+    justify-content: center;
+  }
+  .solution-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

@@ -38,4 +38,21 @@
   position: absolute;
   z-index: 0;
   right: 20px;
+  width: 65%;
+  height: 550px;
+}
+@media screen and (max-width: 900px) {
+  .video-presentation > div {
+    flex-direction: column;
+    height: auto;
+  }
+  .video-presentation .video-description {
+    width: 100%;
+    height: auto;
+  }
+  .video-player iframe {
+    position: static;
+    width: 100%;
+    height: 80vw;
+  }
 }
