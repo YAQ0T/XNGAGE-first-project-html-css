@@ -23,6 +23,7 @@
 }
 .who-we-are .description p {
   margin-inline: 20px;
+  margin-block: 0;
   font-size: 1.1rem;
 }
 .who-we-are .side-info {
