@@ -1,9 +1,5 @@
-.about-us > div {
-  flex-direction: column;
+.who-we-are > div {
   position: relative;
-}
-
-.who-we-are {
   display: flex;
   position: relative;
   height: 130px;
@@ -29,11 +25,12 @@
   margin-inline: 20px;
   font-size: 1.1rem;
 }
-.who-we-are article {
+.who-we-are .side-info {
   background-image: url("./../assets/images/others/fireHand.png");
-  background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 150px;
+  background-origin: border-box;
+  background-position: right bottom;
   position: absolute;
   z-index: 0;
   top: -110px;
@@ -43,62 +40,19 @@
   background-color: var(--primary-color-brand-03);
   color: var(--text-inverse);
 }
-.who-we-are article p {
+.who-we-are .side-info p {
   padding: 30px 25px;
   margin: 0;
   font-size: 1.35rem;
   font-weight: 300;
 }
-.who-we-are article button {
+.who-we-are .side-info button {
   background-color: transparent;
   color: var(--text-inverse);
-  padding: 0px 25px 30px;
+  padding: 0 25px 30px;
   font-size: 1rem;
   font-weight: 400;
   text-transform: capitalize;
   border: 0;
   cursor: pointer;
-}
-
-.about-us figure {
-  margin: 0;
-  margin-top: 80px;
-  display: flex;
-  height: 550px;
-  align-items: center;
-  justify-content: space-between;
-}
-.about-us figure > figcaption {
-  width: 500px;
-  height: 400px;
-  background-color: var(--supplementary-color-ui-01);
-  position: relative;
-  z-index: 1;
-}
-.about-us figure > figcaption > div {
-  flex-direction: column;
-  padding: 60px;
-  gap: 40px;
-}
-
-.about-us figure > figcaption p {
-  color: var(--primary-color-brand-01);
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 0;
-}
-.about-us figure > figcaption p.video-title {
-  color: var(--text-black);
-  font-size: 2rem;
-  text-transform: capitalize;
-}
-.about-us figure > figcaption p.video-brief {
-  color: var(--text-black);
-  font-size: 1rem;
-  font-weight: 400;
-}
-iframe {
-  position: absolute;
-  z-index: 0;
-  right: 20px;
 }
