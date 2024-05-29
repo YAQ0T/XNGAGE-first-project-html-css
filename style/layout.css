@@ -46,7 +46,7 @@ ul {
 .mobile {
   display: none;
 }
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 950px) {
   .container {
     padding: 10px;
   }

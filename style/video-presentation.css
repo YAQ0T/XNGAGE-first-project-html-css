@@ -18,16 +18,21 @@
   gap: 40px;
 }
 
-.video-presentation .video-description p {
+.video-presentation .video-description p,
+.video-presentation .video-description h3 {
   color: var(--primary-color-brand-01);
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0;
 }
-.video-presentation .video-description p.video-title {
+.video-presentation .video-description p.app-name {
+  margin-bottom: 40px;
+}
+.video-presentation .video-description h3.video-title {
   color: var(--text-black);
   font-size: 2rem;
   text-transform: capitalize;
+  margin-block: 20px;
 }
 .video-presentation .video-description p.video-brief {
   color: var(--text-black);

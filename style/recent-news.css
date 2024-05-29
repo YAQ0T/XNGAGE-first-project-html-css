@@ -1,0 +1,95 @@
+.recent-news > div {
+  flex-direction: column;
+}
+.recent-news .title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.all-news {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#view-all-news {
+  padding: 0;
+  margin-left: auto;
+  margin-right: 0;
+  width: max-content;
+  background-color: transparent;
+  border: 0;
+  color: var(--primary-color-brand-02);
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#view-all-news i {
+  margin-left: 5px;
+}
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-content: center;
+  gap: 50px;
+}
+.news-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.navigation-button {
+  background-color: var(--primary-color-brand-01);
+  color: var(--text-inverse);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  position: absolute;
+  top: 25%;
+  padding: 0;
+}
+#nav-next {
+  right: -20px;
+}
+#nav-prev {
+  left: -20px;
+  opacity: 0.5;
+}
+.news-description .news-title {
+  font-size: 1.3rem;
+  font-weight: 450;
+}
+.news-description .news-brief {
+  display: -webkit-box; /* This makes the element behave like a block element for the purposes of the ellipsis */
+  -webkit-box-orient: vertical; /* This specifies that the box should be oriented vertically */
+  -webkit-line-clamp: 3; /* This limits the text to three lines */
+  overflow: hidden; /* This hides the overflowing text */
+  text-overflow: ellipsis; /* This shows the ellipsis at the point where the text overflows */
+  font-size: 0.95rem;
+}
+.news-description a {
+  text-transform: capitalize;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.news-description a > i {
+  margin-left: 5px;
+}
+@media screen and (max-width: 950px) {
+  #news-card-3 {
+    display: none;
+  }
+  #nav-next {
+    right: -10px;
+  }
+  #nav-prev {
+    left: -10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #news-card-2 {
+    display: none;
+  }
+}
