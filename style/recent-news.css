@@ -62,11 +62,11 @@
   font-weight: 450;
 }
 .news-description .news-brief {
-  display: -webkit-box; /* This makes the element behave like a block element for the purposes of the ellipsis */
-  -webkit-box-orient: vertical; /* This specifies that the box should be oriented vertically */
-  -webkit-line-clamp: 3; /* This limits the text to three lines */
-  overflow: hidden; /* This hides the overflowing text */
-  text-overflow: ellipsis; /* This shows the ellipsis at the point where the text overflows */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 0.95rem;
 }
 .news-description a {
