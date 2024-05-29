@@ -77,7 +77,7 @@
 .news-description a > i {
   margin-left: 5px;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   #news-card-3 {
     display: none;
   }

@@ -147,7 +147,7 @@
     background-color: white;
     width: 90%;
     transition: 1s left;
-    z-index: 1;
+    z-index: 3;
   }
   .menu-header {
     height: 65px;

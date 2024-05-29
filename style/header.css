@@ -110,7 +110,7 @@
 #burger-menu-check:checked ~ .main-content-menu {
   left: 0%;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   .hide-mobile {
     display: none;
   }
