@@ -111,7 +111,7 @@
   padding: 10px 20px 10px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
   .main-content-menu li#products:hover .menu-items {
     visibility: visible;
     opacity: 1;
@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .main-content-menu {
     display: flex;
     flex-direction: column;

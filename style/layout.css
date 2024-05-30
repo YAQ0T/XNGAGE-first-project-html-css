@@ -70,4 +70,10 @@ ul {
   .container {
     padding: 10px;
   }
+  .mobile {
+    display: flex;
+  }
+  .hide-mobile {
+    display: none;
+  }
 }

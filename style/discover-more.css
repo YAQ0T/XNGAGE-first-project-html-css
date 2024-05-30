@@ -1,3 +1,6 @@
+.discover-more {
+  margin-bottom: 40px;
+}
 .discover-more > div {
   flex-direction: column;
 }
