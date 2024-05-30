@@ -1,0 +1,81 @@
+.discover-more > div {
+  flex-direction: column;
+}
+.discover-more .title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.discover-more .discover-cards {
+  display: flex;
+  gap: 40px;
+}
+.discover-card {
+  display: flex;
+}
+.discover-card .side-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+}
+#discover-card-1 .side-image {
+  background-image: url("./../assets/images/discover-more/card1.jpg");
+}
+#discover-card-2 .side-image {
+  background-image: url("./../assets/images/discover-more/card2.jpg");
+}
+.discover-card .card-info {
+  width: 50%;
+  color: var(--text-inverse);
+  padding: 30px;
+}
+#discover-card-1 .card-info {
+  background-color: var(--supplementary-color-ui-06);
+}
+#discover-card-2 .card-info {
+  background-color: var(--supplementary-color-ui-04);
+}
+.discover-card .card-title {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.discover-card .card-caption {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-top: 80px;
+}
+.discover-card .card-description {
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+.discover-card a {
+  color: var(--text-inverse);
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.discover-card a i {
+  margin-left: 5px;
+}
+@media screen and (max-width: 950px) {
+  .discover-more .discover-cards {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .discover-card {
+    flex-direction: column;
+  }
+  .discover-card .side-image {
+    width: 100%;
+    height: 250px;
+  }
+  .discover-card .card-info {
+    width: 100%;
+  }
+}
