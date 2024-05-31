@@ -10,13 +10,25 @@
   padding: 35px 20px 18px;
   color: var(--primary-color-brand-01);
   font-weight: 700;
-  transition: border-bottom 1s;
-  border-bottom: 2px solid transparent;
 }
 
-.main-content-menu li:hover {
+/* This is for drawing the small line on hover on the menu list */
+.main-content-menu > ul > li > a {
+  position: relative;
+}
+.main-content-menu > ul > li > a::before {
+  content: " ";
+  width: 30px;
+  position: absolute;
+  border-bottom: 0.15rem solid transparent;
+  bottom: -10px;
+  left: 0;
+  transition: border-color 1s;
+}
+.main-content-menu > ul > li:hover > a::before {
   border-color: var(--primary-color-brand-01);
 }
+/* ------ end ------*/
 .main-content-menu ul li::before {
   content: "";
   height: 50px;
@@ -99,7 +111,7 @@
   padding: 10px 20px 10px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
   .main-content-menu li#products:hover .menu-items {
     visibility: visible;
     opacity: 1;
@@ -124,7 +136,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .main-content-menu {
     display: flex;
     flex-direction: column;
@@ -135,6 +147,7 @@
     background-color: white;
     width: 90%;
     transition: 1s left;
+    z-index: 3;
   }
   .menu-header {
     height: 65px;

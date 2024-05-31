@@ -26,7 +26,7 @@ ul {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+  z-index: 2;
   cursor: pointer;
 }
 .container {
@@ -46,8 +46,34 @@ ul {
 .mobile {
   display: none;
 }
-@media screen and (max-width: 842px) {
+
+.navigation-button {
+  background-color: var(--primary-color-brand-01);
+  color: var(--text-inverse);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  position: absolute;
+  top: 25%;
+  padding: 0;
+  z-index: 1;
+}
+#nav-next {
+  right: -20px;
+}
+#nav-prev {
+  left: -20px;
+  opacity: 0.5;
+}
+@media screen and (max-width: 950px) {
   .container {
     padding: 10px;
+  }
+  .mobile {
+    display: flex;
+  }
+  .hide-mobile {
+    display: none;
   }
 }

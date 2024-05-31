@@ -63,26 +63,38 @@
 }
 
 #search {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
   height: min-content;
   display: flex;
   background-color: transparent;
   align-items: center;
   justify-content: space-between;
-  transition: border-bottom 1s;
   padding: 35px 20px 18px;
   border: 0;
-  border-bottom: 2px solid transparent;
   gap: 10px;
   color: var(--primary-color-brand-01);
 }
-
-#search p {
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 700;
+/* This for draw the small line under the button */
+#search span {
+  position: relative;
+  transition: border-color 1s;
 }
-
+#search span::before {
+  content: " ";
+  width: 30px;
+  position: absolute;
+  border-bottom: 0.15rem solid transparent;
+  bottom: -10px;
+  left: 0;
+  transition: border-color 1s;
+}
+#search:hover span::before {
+  border-color: var(--primary-color-brand-01);
+}
+/* ------- ends here  -------- */
 #search i {
   font-size: 1rem;
   cursor: pointer;
@@ -98,13 +110,9 @@
 #burger-menu-check:checked ~ .main-content-menu {
   left: 0%;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .hide-mobile {
     display: none;
-  }
-
-  .mobile {
-    display: flex;
   }
 
   .notification-bar > div {

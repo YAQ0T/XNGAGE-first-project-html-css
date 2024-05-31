@@ -23,6 +23,7 @@
 }
 .who-we-are .description p {
   margin-inline: 20px;
+  margin-block: 0;
   font-size: 1.1rem;
 }
 .who-we-are .side-info {
@@ -55,4 +56,30 @@
   text-transform: capitalize;
   border: 0;
   cursor: pointer;
+}
+@media screen and (max-width: 950px) {
+  .who-we-are > div {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .who-we-are .title {
+    width: 100%;
+    border: 0;
+    margin: 0;
+  }
+  .who-we-are .title h2 {
+    margin: 0;
+  }
+  .who-we-are .description {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .who-we-are .side-info {
+    position: static;
+    width: 100%;
+    max-width: none;
+  }
 }

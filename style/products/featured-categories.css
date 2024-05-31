@@ -1,0 +1,29 @@
+.featured-categories .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.featured-categories .category {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin: 50px 10px;
+}
+.featured-categories img {
+  height: 230px;
+  width: 230px;
+}
+.featured-categories .category a {
+  text-transform: capitalize;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.featured-categories .category a i {
+  margin-left: 5px;
+}
+@media screen and (max-width: 1305px) {
+  .featured-categories .categories {
+    justify-content: space-evenly;
+  }
+}
