@@ -18,6 +18,7 @@
   gap: 40px;
 }
 
+.video-presentation .video-description a,
 .video-presentation .video-description p,
 .video-presentation .video-description h3 {
   color: var(--primary-color-brand-01);

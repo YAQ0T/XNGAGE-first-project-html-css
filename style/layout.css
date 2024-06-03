@@ -5,6 +5,9 @@
 body {
   margin: 0;
 }
+main section {
+  margin-block: 40px;
+}
 a,
 a:visited,
 a:hover {
@@ -16,6 +19,7 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
 #overlay {
   position: fixed;
   display: none;
@@ -32,7 +36,7 @@ ul {
 .container {
   width: 100%;
   max-width: 1300px;
-  padding: 20px;
+  padding-inline: 20px;
   display: flex;
   margin: 0 auto;
 }
@@ -46,7 +50,10 @@ ul {
 .mobile {
   display: none;
 }
-
+.title {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
 .navigation-button {
   background-color: var(--primary-color-brand-01);
   color: var(--text-inverse);
@@ -67,6 +74,12 @@ ul {
   opacity: 0.5;
 }
 @media screen and (max-width: 950px) {
+  #nav-next {
+    right: -10px;
+  }
+  #nav-prev {
+    left: -10px;
+  }
   .container {
     padding: 10px;
   }

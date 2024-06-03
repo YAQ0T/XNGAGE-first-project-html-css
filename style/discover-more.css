@@ -65,12 +65,11 @@
 .discover-card a i {
   margin-left: 5px;
 }
+
 @media screen and (max-width: 950px) {
   .discover-more .discover-cards {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 600px) {
   .discover-card {
     flex-direction: column;
   }
@@ -80,5 +79,8 @@
   }
   .discover-card .card-info {
     width: 100%;
+  }
+  .discover-card .card-caption {
+    margin-top: 20px;
   }
 }

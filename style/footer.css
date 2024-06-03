@@ -108,7 +108,7 @@ footer a:hover {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .copyright .mobile {
     display: flex;
   }
@@ -173,7 +173,7 @@ footer a:hover {
     max-height: 0;
     margin: 0;
     overflow: hidden;
-    transition: 2s max-height, 3s margin;
+    transition: 3s max-height, 3s margin;
   }
 
   .footer-list > input:checked ~ ul {
@@ -181,7 +181,7 @@ footer a:hover {
     max-height: 200px; /* Set this to a value that is large enough for the content */
   }
   .footer-list > label > h4 > i {
-    transition: 1s transform;
+    transition: 3s transform;
   }
   .footer-list > input:checked ~ label > h4 > i {
     transform: rotate(180deg);
