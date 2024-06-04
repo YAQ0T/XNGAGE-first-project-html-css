@@ -3,11 +3,7 @@
 }
 .discover-more > div {
   flex-direction: column;
-}
-.discover-more .title {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 1.5rem;
+  align-items: center;
 }
 .discover-more .discover-cards {
   display: flex;
@@ -61,6 +57,9 @@
   font-size: 0.9rem;
   display: inline-block;
   margin-bottom: 30px;
+}
+.discover-card a:nth-child(1) {
+  margin-bottom: 0;
 }
 .discover-card a i {
   margin-left: 5px;

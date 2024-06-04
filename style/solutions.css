@@ -18,11 +18,12 @@
   color: var(--text-black);
 }
 
-.solution-info .solution-title {
+.solution-info a .solution-title {
   color: var(--primary-color-brand-02);
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
+  font-size: 1rem;
 }
 .solution-info .solution-title::before {
   content: " ";
@@ -37,8 +38,12 @@
   font-size: 2rem;
   font-weight: 500;
 }
+.solution-image {
+  max-width: 800px;
+  min-width: 65%;
+}
 .solution-image img {
-  width: 60vw;
+  width: 100%;
   height: 410px;
   object-fit: cover;
 }
@@ -70,6 +75,7 @@ p.solution-description {
   .solution-image {
     display: flex;
     justify-content: center;
+    order: 2;
   }
   .solution-image img {
     width: 80vw;

@@ -27,6 +27,7 @@
 }
 .main-content-menu > ul > li:hover > a::before {
   border-color: var(--primary-color-brand-01);
+  cursor: auto;
 }
 /* ------ end ------*/
 
@@ -38,7 +39,6 @@
   left: 0;
   background-color: var(--text-inverse);
   width: 100%;
-  height: 480px;
   transition: 1s opacity;
 }
 .menu-items > div {
@@ -49,7 +49,7 @@
   position: absolute;
   padding-block: 20px;
   width: 95%;
-  height: 480px;
+  height: 479px;
   border-left: 2px solid var(--supplementary-color-ui-01);
   top: 0;
   visibility: hidden;
@@ -73,7 +73,8 @@
 
 .menu-items .figure {
   margin-left: auto;
-  width: 440px;
+  width: 35%;
+
   background-color: var(--support-color-five);
   z-index: 1;
 }
@@ -96,7 +97,7 @@
 }
 
 .menu-items figure img {
-  width: 440px;
+  width: 100%;
   height: 300px;
 }
 .menu-items li {
@@ -109,22 +110,23 @@
     opacity: 1;
   }
   .main-content-menu li#products:hover .menu-items-lvl1,
-  #boilers:hover .sup-menu.menu-items-lvl2,
-  #firetube:hover .sup-menu.menu-items-lvl3 {
+  .boilers:hover .sup-menu.menu-items-lvl2,
+  .firetube:hover .sup-menu.menu-items-lvl3 {
     visibility: visible;
     opacity: 1;
   }
   .sup-menu.menu-items-lvl1 {
-    width: calc(100% - 440px);
+    width: calc(21.6%);
     left: 0;
+    border-left: 0;
   }
   .sup-menu.menu-items-lvl2 {
-    left: 33%;
-    width: 66%;
+    left: 100%;
+    width: 100%;
   }
   .sup-menu.menu-items-lvl3 {
-    left: 50%;
-    width: 50%;
+    left: 100%;
+    width: 100%;
   }
 }
 
@@ -142,7 +144,7 @@
     background-color: white;
     width: 90%;
     transition: 1s left;
-    z-index: 3;
+    z-index: 4;
   }
   .menu-header {
     height: 65px;

@@ -6,8 +6,8 @@
   height: 590px;
 }
 .video-presentation .video-description {
-  width: 500px;
-  height: 400px;
+  width: 38%;
+  height: auto;
   background-color: var(--supplementary-color-ui-01);
   z-index: 1;
   margin: auto 0;

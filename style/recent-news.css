@@ -1,10 +1,9 @@
 .recent-news > div {
   flex-direction: column;
+  align-items: center;
 }
-.recent-news .title {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 1.5rem;
+.recent-news .title h2 {
+  margin-bottom: 0;
 }
 .news-card a {
   color: var(--text-black);

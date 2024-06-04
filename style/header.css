@@ -3,6 +3,11 @@
   flex-direction: column;
   width: 100%;
   border-bottom: 5px solid var(--primary-color-brand-03);
+  background-color: var(--text-inverse);
+  position: -webkit-sticky; /* For Safari */
+  position: sticky; /* Standard */
+  top: 0;
+  z-index: 2; /* Ensure proper stacking context */
 }
 
 .notification-bar {
@@ -54,12 +59,12 @@
 #xng-logo-header {
   width: 185px;
   height: auto;
-  margin-right: 40px;
 }
 
 .logo-link {
   display: flex;
   align-items: center;
+  margin-right: 40px;
 }
 
 #search {
@@ -110,6 +115,7 @@
 #burger-menu-check:checked ~ .main-content-menu {
   left: 0%;
 }
+
 @media screen and (max-width: 950px) {
   .hide-mobile {
     display: none;
@@ -140,7 +146,9 @@
     display: flex;
     align-items: center;
   }
-
+  .utility-menu a i {
+    margin-right: 5px;
+  }
   .main-content > div {
     min-height: 70px;
     align-items: center;

@@ -1,3 +1,6 @@
+.recently-viewed-products {
+  margin-top: 60px;
+}
 .recently-viewed-products img {
   width: 100%;
   height: 300px;
@@ -22,12 +25,14 @@
 .product-card .product-description::after {
   content: "";
   width: 20px;
+
   background-color: var(--support-color-six);
   transform: skewX(155deg);
   position: relative;
   left: 10px;
 }
-.product-card .product-description p {
+.product-card .product-description a {
+  color: var(--text-black);
   padding: 5px 15px;
   margin: 0;
   font-size: 0.9rem;
@@ -39,11 +44,13 @@
   height: min-content;
 }
 .product-card .product-title {
+  display: inline-block;
   color: var(--primary-color-brand-01);
   text-transform: capitalize;
   font-size: 0.95rem;
   font-weight: 600;
   text-transform: capitalize;
+  margin-block: 15px;
 }
 .product-card .product-number {
   display: flex;
