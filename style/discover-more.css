@@ -17,6 +17,7 @@
   background-position: center;
   background-size: cover;
   width: 50%;
+  margin-bottom: 0;
 }
 #discover-card-1 .side-image {
   background-image: url("./../assets/images/discover-more/card1.jpg");
@@ -44,7 +45,7 @@
 .discover-card .card-caption {
   font-size: 2rem;
   text-transform: capitalize;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 .discover-card .card-description {
   font-size: 0.95rem;
@@ -58,17 +59,15 @@
   display: inline-block;
   margin-bottom: 30px;
 }
-.discover-card a:nth-child(1) {
-  margin-bottom: 0;
-}
 .discover-card a i {
   margin-left: 5px;
 }
-
 @media screen and (max-width: 950px) {
   .discover-more .discover-cards {
     flex-direction: column;
   }
+}
+@media screen and (max-width: 600px) {
   .discover-card {
     flex-direction: column;
   }
@@ -80,6 +79,6 @@
     width: 100%;
   }
   .discover-card .card-caption {
-    margin-top: 20px;
+    margin-top: 0;
   }
 }
