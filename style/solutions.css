@@ -17,13 +17,16 @@
   margin-bottom: 20px;
   color: var(--text-black);
 }
-
+.solution-info a {
+  width: max-content;
+}
 .solution-info a .solution-title {
   color: var(--primary-color-brand-02);
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
   font-size: 1rem;
+  width: max-content;
 }
 .solution-info .solution-title::before {
   content: " ";
