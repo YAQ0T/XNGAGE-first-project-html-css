@@ -37,6 +37,7 @@ footer > div {
 .main-footer .side-info a {
   font-size: 0.95rem;
   font-weight: 450;
+  width: max-content;
 }
 .main-footer .side-info a i {
   margin-left: 5px;
