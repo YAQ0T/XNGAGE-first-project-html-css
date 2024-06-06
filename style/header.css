@@ -1,8 +1,13 @@
-.header {
+header {
   display: flex;
   flex-direction: column;
   width: 100%;
   border-bottom: 5px solid var(--primary-color-brand-03);
+  background-color: var(--text-inverse);
+  position: -webkit-sticky; /* For Safari */
+  position: sticky; /* Standard */
+  top: 0;
+  z-index: 2; /* Ensure proper stacking context */
 }
 
 .notification-bar {
@@ -13,6 +18,7 @@
   justify-content: center;
   font-size: 0.9375rem;
   gap: 15px;
+  padding-block: 20px;
 }
 
 .notification-bar a,
@@ -38,28 +44,27 @@
   font-weight: 600;
 }
 .utility-menu a {
-  padding-inline: 20px;
+  margin-inline: 20px;
 }
 .main-content {
   box-shadow: 0 0 8px 0 var(--drop-shadow-primary);
 }
 
 .main-content > div {
-  min-height: 105px;
   justify-content: space-between;
   position: relative;
+  top: 5px;
 }
 
-#xng-logo-header {
+.logo-img {
   width: 185px;
   height: auto;
-  margin-right: 40px;
-  padding-top: 10px;
 }
 
 .logo-link {
   display: flex;
   align-items: center;
+  margin-right: 40px;
 }
 
 #search {
@@ -104,17 +109,17 @@
   border-color: var(--primary-color-brand-01);
   cursor: pointer;
 }
-#burger-menu-check:checked ~ #overlay {
+#burger-menu-check:checked ~ .overlay {
   display: flex;
 }
 #burger-menu-check:checked ~ .main-content-menu {
   left: 0%;
 }
-@media screen and (max-width: 950px) {
-  .hide-mobile {
-    display: none;
-  }
 
+@media screen and (max-width: 950px) {
+  .logo-link {
+    margin-right: 0;
+  }
   .notification-bar > div {
     flex-direction: column;
     gap: 0;
@@ -124,9 +129,6 @@
   .utility-menu {
     background-color: var(--support-color-five);
     background-image: none;
-    height: calc(30vh - 65px);
-    min-height: 120px;
-    max-height: 230px;
     z-index: 1;
   }
   .utility-menu > div {
@@ -143,24 +145,26 @@
     display: flex;
     align-items: center;
   }
-
+  .utility-menu a i {
+    margin-right: 5px;
+  }
   .main-content > div {
     min-height: 70px;
     align-items: center;
   }
 
-  #burger-menu {
+  .burger-menu {
     font-size: 1.5625rem;
     color: var(--primary-color-brand-01);
     cursor: pointer;
     transition: transform 2s;
   }
 
-  #burger-menu:hover {
+  .burger-menu:hover {
     transform: rotate(180deg);
   }
 
-  #xng-logo-header {
+  .logo-img {
     padding: 0;
     margin: 0;
     width: 165px;

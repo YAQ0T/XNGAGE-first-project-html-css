@@ -1,5 +1,6 @@
 footer {
   background-color: var(--primary-color-brand-01);
+  margin-top: 60px;
 }
 footer * {
   color: var(--text-inverse);
@@ -36,6 +37,7 @@ footer > div {
 .main-footer .side-info a {
   font-size: 0.95rem;
   font-weight: 450;
+  width: max-content;
 }
 .main-footer .side-info a i {
   margin-left: 5px;
@@ -108,7 +110,7 @@ footer a:hover {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .copyright .mobile {
     display: flex;
   }
@@ -173,7 +175,7 @@ footer a:hover {
     max-height: 0;
     margin: 0;
     overflow: hidden;
-    transition: 2s max-height, 3s margin;
+    transition: 2s max-height, 2s margin;
   }
 
   .footer-list > input:checked ~ ul {
@@ -181,7 +183,7 @@ footer a:hover {
     max-height: 200px; /* Set this to a value that is large enough for the content */
   }
   .footer-list > label > h4 > i {
-    transition: 1s transform;
+    transition: 2s transform;
   }
   .footer-list > input:checked ~ label > h4 > i {
     transform: rotate(180deg);

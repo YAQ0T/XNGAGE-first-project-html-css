@@ -2,11 +2,7 @@
   flex-direction: column;
   align-items: center;
 }
-.solutions .title {
-  width: 160px;
-  text-transform: capitalize;
-  font-size: 1.5rem;
-}
+
 .solution {
   display: flex;
   gap: 20px;
@@ -19,13 +15,18 @@
 .solution-info p {
   margin: 0;
   margin-bottom: 20px;
+  color: var(--text-black);
 }
-
-.solution-info .solution-title {
+.solution-info a {
+  width: max-content;
+}
+.solution-info a .solution-title {
   color: var(--primary-color-brand-02);
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
+  font-size: 1rem;
+  width: max-content;
 }
 .solution-info .solution-title::before {
   content: " ";
@@ -40,11 +41,16 @@
   font-size: 2rem;
   font-weight: 500;
 }
-.solution-image img {
-  width: 740px;
-  height: 410px;
+.solution-image {
+  max-width: 800px;
+  min-width: 65%;
 }
-.solution-info button {
+.solution-image img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+}
+.solution-info a {
   text-align: start;
   background-color: transparent;
   border: 0;
@@ -55,11 +61,15 @@
   padding: 0;
   margin-top: 20px;
 }
-.solution-info button i {
+.solution-info a i {
   margin-left: 10px;
 }
 .custom-solution {
   margin-top: 60px;
+}
+p.solution-description {
+  font-size: 0.95rem;
+  color: rgb(0, 0, 0, 0.85);
 }
 @media screen and (max-width: 950px) {
   .solution {
@@ -68,9 +78,10 @@
   .solution-image {
     display: flex;
     justify-content: center;
+    order: 2;
   }
   .solution-image img {
-    width: 100%;
+    width: 80vw;
     object-fit: cover;
   }
 }

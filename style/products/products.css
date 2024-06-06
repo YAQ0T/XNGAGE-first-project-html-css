@@ -23,8 +23,6 @@
 }
 .products .title {
   text-align: center;
-  text-transform: capitalize;
-  font-size: 1.5rem;
 }
 .products-cards .navigation-button {
   top: calc(50% - 30px);

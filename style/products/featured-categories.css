@@ -2,13 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  gap: 30px 27px;
 }
 .featured-categories .category {
   display: flex;
   flex-direction: column;
   gap: 40px;
   align-items: center;
-  margin: 50px 10px;
 }
 .featured-categories img {
   height: 230px;

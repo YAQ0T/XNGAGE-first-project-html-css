@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header>
     <div class="notification-bar">
       <div class="container">
         <p>
@@ -22,7 +22,7 @@
         <a href="./pages/company info.html">Learn More <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
-    <nav class="utility-menu hide-mobile">
+    <div class="utility-menu hide-mobile">
       <div class="container">
         <a href="./index.html">
           <i class="fas fa-tower-cell"></i>
@@ -33,25 +33,25 @@
           Parts Store
         </a>
       </div>
-    </nav>
+    </div>
     <div class="main-content">
       <div class="container">
         <label for="burger-menu-check">
-          <i id="burger-menu" class="mobile fas fa-bars"></i>
+          <i class="burger-menu mobile fas fa-bars"></i>
         </label>
         <input type="checkbox" name="burger-menu-check" id="burger-menu-check" aria-hidden="true"
           class="hidden-input" />
-        <div id="overlay"></div>
+        <div class="overlay"></div>
         <a class="logo-link" href="./index.html">
-          <img src="./assets/images/logo/logo.svg" alt="Logo" id="xng-logo-header" class="logo-img" />
+          <img src="./assets/images/logo/logo.svg" alt="Logo" class="logo-img" />
         </a>
-        <nav class="main-content-menu hide-mobile">
+        <div class="main-content-menu hide-mobile">
           <div class="mobile menu-header">
-            <label for="burger-menu-check" id="exit-burger-menu">
+            <label for="burger-menu-check">
               <i class="fas fa-times"></i>
             </label>
           </div>
-          <ul class="nav">
+          <ul>
             <li>
               <a href="./pages/solution.html">solutions</a>
               <label class="mobile">
@@ -70,7 +70,7 @@
                     products</label>
                   <div class="menu-items-lvl1 sup-menu">
                     <ul>
-                      <li id="boilers">
+                      <li class="boilers">
                         <input type="checkbox" name="sup-menu-lvl2-check" id="sup-menu-lvl2-check" class="hidden-input"
                           aria-hidden="true">
                         <a href="javascript:void(0)">
@@ -81,7 +81,7 @@
                         </label>
                         <div class="menu-items-lvl2 sup-menu">
                           <ul>
-                            <li id="firetube">
+                            <li class="firetube">
                               <a href="javascript:void(0)">
                                 firetube
                                 <i class="fas fa-arrow-right hide-mobile"></i>
@@ -132,8 +132,47 @@
                             <li>
                               <a href="javascript:void(0)"> modular steam </a>
                             </li>
-                            <li>
-                              <a href="javascript:void(0)"> HRSG </a>
+                            <li class="firetube">
+                              <a href="javascript:void(0)">
+                                firetube
+                                <i class="fas fa-arrow-right hide-mobile"></i>
+                              </a>
+                              <div class="menu-items-lvl3 sup-menu">
+                                <ul>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX dryback elite </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX elite </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)">
+                                      CBEX elite (1,300 - 2,200 HP)
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX premium </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBLE </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> 4WI </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBR </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> 4WG </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> ICB </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBL </a>
+                                  </li>
+                                </ul>
+                              </div>
                             </li>
                             <li>
                               <a href="javascript:void(0)"> waste heat </a>
@@ -149,12 +188,6 @@
                       </li>
                       <li>
                         <a href="javascript:void(0)"> burners </a>
-                        <label>
-                          <i class="fas fa-arrow-right"></i>
-                        </label>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)"> Controls </a>
                         <label>
                           <i class="fas fa-arrow-right"></i>
                         </label>
@@ -176,6 +209,122 @@
                         <label>
                           <i class="fas fa-arrow-right"></i>
                         </label>
+                      </li>
+                      <li class="boilers">
+                        <input type="checkbox" name="sup-menu-lvl2-check" id="sup-menu-lvl2-check" class="hidden-input"
+                          aria-hidden="true">
+                        <a href="javascript:void(0)">
+                          boilers
+                        </a>
+                        <label for="sup-menu-lvl2-check">
+                          <i class="fas fa-arrow-right"></i>
+                        </label>
+                        <div class="menu-items-lvl2 sup-menu">
+                          <ul>
+                            <li class="firetube">
+                              <a href="javascript:void(0)">
+                                firetube
+                                <i class="fas fa-arrow-right hide-mobile"></i>
+                              </a>
+                              <div class="menu-items-lvl3 sup-menu">
+                                <ul>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX dryback elite </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX elite </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)">
+                                      CBEX elite (1,300 - 2,200 HP)
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX premium </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBLE </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> 4WI </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBR </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> 4WG </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> ICB </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBL </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)"> flexible watertube </a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)"> modular hydronic </a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)"> modular steam </a>
+                            </li>
+                            <li class="firetube">
+                              <a href="javascript:void(0)">
+                                firetube
+                                <i class="fas fa-arrow-right hide-mobile"></i>
+                              </a>
+                              <div class="menu-items-lvl3 sup-menu">
+                                <ul>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX dryback elite </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX elite </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)">
+                                      CBEX elite (1,300 - 2,200 HP)
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBEX premium </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBLE </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> 4WI </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBR </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> 4WG </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> ICB </a>
+                                  </li>
+                                  <li>
+                                    <a href="javascript:void(0)"> CBL </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)"> waste heat </a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)"> electric </a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0)"> skid mounted boiler solutions </a>
+                            </li>
+                          </ul>
+                        </div>
                       </li>
                       <li>
                         <a href="javascript:void(0)"> parts & service </a>
@@ -201,6 +350,7 @@
                           <i class="fas fa-arrow-right"></i>
                         </label>
                       </li>
+
                     </ul>
                   </div>
                 </div>
@@ -244,15 +394,16 @@
             <div class="container">
               <a href="javascript:void(0)">
                 <i class="fas fa-tower-cell"></i>
-                Find a Rep
+                <span>Find a Rep</span>
               </a>
               <a href="javascript:void(0)">
                 <i class="fas fa-cart-shopping"></i>
-                Parts Store
+                <span>Parts Store</span>
+
               </a>
             </div>
           </div>
-        </nav>
+        </div>
         <button id="search">
           <span class="search hide-mobile">search</span>
           <i class="fas fa-search"></i>
@@ -297,7 +448,7 @@
     <section class="video-presentation">
       <div class="container">
         <div class="video-description">
-          <p class="app-name">prometha</p>
+          <a href="javascript:void(0)" class="app-name">prometha</a>
           <h3 class="video-title">
             boiler room intelligence at your fingertips
           </h3>
@@ -324,13 +475,15 @@
         </div>
         <div class="solution rentals">
           <div class="solution-info">
-            <h3 class="solution-title">rentals</h3>
+            <a href="javascript:void(0)">
+              <h3 class="solution-title">rentals</h3>
+            </a>
             <p class="solution-brief">we provide. nationwide.</p>
             <p class="solution-description">
               More than 1,500 CBRA representatives worldwide provide
               comprehensive, ongoing support-from commissioning your system, to providing parts and service after the
               sale, to product training.</p>
-            <button><span>learn more</span><i class="fa-solid fa-arrow-right"></i></button>
+            <a><span>learn more</span><i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="solution-image">
             <img src="./assets/images/solutions/cleaver-brooks.jpg" alt="cleaver-brooks">
@@ -341,13 +494,15 @@
             <img src="./assets/images/solutions/cleaver-brooks-with-man.jpg" alt="cleaver-brooks-with-man">
           </div>
           <div class="solution-info">
-            <h3 class="solution-title">custom solutions</h3>
+            <a href="javascript:void(0)">
+              <h3 class="solution-title">custom solutions</h3>
+            </a>
             <p class="solution-brief">lower emissions.</p>
             <p class="solution-description">
               Cleaver-Brooks works with customers to custom tailor solutions that
               help them be more environmentally friendly, decrease fuel costs, increase efficiency, and meet ever
               stringent guidelines.</p>
-            <button><span>learn more</span><i class="fa-solid fa-arrow-right"></i></button>
+            <a><span>learn more</span><i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -358,37 +513,50 @@
           <h2>recent news</h2>
         </div>
         <div class="all-news">
-          <button id="view-all-news"><span>view all news</span><i class="fa-solid fa-arrow-right"></i></button>
+          <a href="javascript:void(0)" class="view-all-news"><span>view all news</span><i
+              class="fa-solid fa-arrow-right"></i></a>
           <button class="navigation-button" id="nav-next"><i class="fa-solid fa-chevron-right"></i></button>
           <div class="news-cards">
-            <div class="news-card" id="news-card-1">
-              <div class="news-img"><img src="./assets/images/cards/cards-temp-card1.png" alt="cards-temp-card1"></div>
-              <div class="news-description">
-                <h3 class="news-title">
-                  Desperate Times Call for Innovative IoT Boiler Monitoring Measures
-                </h3>
-                <p class="news-brief">
-                  As we navigate these unchartered waters together, smart technology can help keep critical systems
-                  operational to ensure that companies stay up and running. Functions that are working to give u the
-                  best exp</p>
-                <a href="javascript:void(0)"><span>read more</span><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+            <div class="news-card">
+              <a href="javascript:void(0)">
+                <div class="news-img"><img src="./assets/images/cards/cards-temp-card1.png" alt="cards-temp-card1">
+                </div>
+                <div class="news-description">
+                  <h3 class="news-title">
+                    Desperate Times Call for Innovative IoT Boiler Monitoring Measures
+                  </h3>
+                  <p class="news-brief">
+                    As we navigate these unchartered waters together, smart technology can help keep critical systems
+                    operational to ensure that companies stay up and running. Functions that are working to give u the
+                    best exp</p>
+                  <a href="javascript:void(0)" class="news-link">
+                    <span>read more</span><i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </a>
             </div>
-            <div class="news-card" id="news-card-2">
-              <div class="news-img"><img src="./assets/images/cards/cards-temp-card2.png" alt="cards-temp-card2"></div>
-              <div class="news-description">
-                <h3 class="news-title">
-                  Our Commitment to Customers During
-                  COVID-19 Pandemic
-                </h3>
-                <p class="news-brief">
-                  As we navigate these unchartered waters together, smart technology can help keep critical systems
-                  operational to ensure that companies stay up and running. Functions that are working to give u the
-                  best exp</p>
-                <a href="javascript:void(0)"><span>read more</span><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+            <div class="news-card">
+              <a href="javascript:void(0)">
+                <div class="news-img"><img src="./assets/images/cards/cards-temp-card2.png" alt="cards-temp-card2">
+                </div>
+                <div class="news-description">
+                  <h3 class="news-title">
+                    Our Commitment to Customers During
+                    COVID-19 Pandemic
+                  </h3>
+                  <p class="news-brief">
+                    As we navigate these unchartered waters together, smart technology can help keep critical systems
+                    operational to ensure that companies stay up and running. Functions that are working to give u the
+                    best exp</p>
+                  <a href="javascript:void(0)" class="news-link">
+                    <span>read more</span><i class="fa-solid fa-arrow-right"></i>
+                  </a>
+              </a>
             </div>
-            <div class="news-card" id="news-card-3">
+          </div>
+          <div class="news-card">
+            <a href="javascript:void(0)">
+
               <div class="news-img"><img src="./assets/images/cards/cards-temp-card3.png" alt="cards-temp-card3"></div>
               <div class="news-description">
                 <h3 class="news-title">
@@ -398,12 +566,15 @@
                   As we navigate these unchartered waters together, smart technology can help keep critical systems
                   operational to ensure that companies stay up and running. Functions that are working to give u the
                   best exp</p>
-                <a href="javascript:void(0)"><span>read more</span><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="javascript:void(0)" class="news-link">
+                  <span>read more</span><i class="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
-            </div>
+            </a>
           </div>
-          <button class="navigation-button" id="nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
         </div>
+        <button class="navigation-button" id="nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+      </div>
       </div>
     </section>
     <section class="products">
@@ -419,32 +590,48 @@
           </div>
           <div class="categories">
             <div class="category">
-              <img src="./assets/images/products/boilers.jpg" alt="boilers">
-              <a href=""><span>boilers</span><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="javascript:void(0)">
+                <img src="./assets/images/products/boilers.jpg" alt="boilers">
+                <a href=""><span>boilers</span><i class="fa-solid fa-arrow-right"></i></a>
+              </a>
             </div>
             <div class="category">
-              <img src="./assets/images/products/burners.jpg" alt="burners">
-              <a href=""><span>burners</span><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="javascript:void(0)">
+                <img src="./assets/images/products/burners.jpg" alt="burners">
+                <a href=""><span>burners</span><i class="fa-solid fa-arrow-right"></i></a>
+              </a>
             </div>
             <div class="category">
-              <img src="./assets/images/products/controls.jpg" alt="controls">
-              <a href=""><span>controls</span><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="javascript:void(0)">
+                <img src="./assets/images/products/controls.jpg" alt="controls">
+                <a href=""><span>controls</span><i class="fa-solid fa-arrow-right"></i></a>
+              </a>
             </div>
             <div class="category">
-              <img src="./assets/images/products/heat recovery.png" alt="heat recovery">
-              <a href=""><span>heat recovery</span><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="javascript:void(0)">
+                <img src="./assets/images/products/heat recovery.png" alt="heat recovery">
+                <a href=""><span>heat recovery</span><i class="fa-solid fa-arrow-right"></i></a>
+              </a>
             </div>
             <div class="category">
-              <img src="./assets/images/products/water systems.jpg" alt="water systems">
-              <a href=""><span>water systems</span><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="javascript:void(0)">
+                <img src="./assets/images/products/water systems.jpg" alt="water systems">
+                <a href=""><span>water systems</span><i class="fa-solid fa-arrow-right"></i></a>
+              </a>
             </div>
             <div class="category">
-              <img src="./assets/images/products/exhaust solution.jpg" alt="exhaust solution">
-              <a href=""><span>exhaust solution</span><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="javascript:void(0)">
+                <img src="./assets/images/products/exhaust solution.jpg" alt="exhaust solution">
+                <a href=""><span>exhaust solution</span><i class="fa-solid fa-arrow-right"></i></a>
+              </a>
+
             </div>
             <div class="category">
-              <img src="./assets/images/products/parts & service.jpg" alt="parts & service">
-              <a href=""><span>parts & service</span><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="javascript:void(0)">
+                <img src="./assets/images/products/parts & service.jpg" alt="parts & service">
+                <a href=""><span>parts & service</span><i class="fa-solid fa-arrow-right"></i></a>
+              </a>
+
             </div>
           </div>
         </div>
@@ -456,55 +643,52 @@
           <div class="products-cards">
             <button class="navigation-button" id="nav-next"><i class="fa-solid fa-chevron-right"></i></button>
 
-            <div class="product-card" id="product-card-1">
+            <div class="product-card">
               <div class="product-description">
-                <p>near-perfect combustion</p>
+                <a href="javascript:void(0)">near-perfect combustion</a>
               </div>
               <img src="./assets/images/products/boilers.jpg" alt="boilers">
               <div class="product-details">
-                <h3 class="product-title">CBEX dryback elite</h3>
+                <a href="javascript:void(0)" class="product-title">CBEX dryback elite</a>
                 <div class="product-number"><b>CB Part #:</b>
                   <p>4268902</p>
                 </div>
                 <button class="view-details">view details</button>
               </div>
             </div>
-
-            <div class="product-card" id="product-card-2">
+            <div class="product-card">
               <div class="product-description">
-                <p>near-perfect combustion</p>
+                <a href="javascript:void(0)">near-perfect combustion</a>
               </div>
               <img src="./assets/images/products/boilers.jpg" alt="boilers">
               <div class="product-details">
-                <h3 class="product-title">CBEX dryback elite</h3>
+                <a href="javascript:void(0)" class="product-title">CBEX dryback elite</a>
                 <div class="product-number"><b>CB Part #:</b>
                   <p>4268902</p>
                 </div>
                 <button class="view-details">view details</button>
               </div>
             </div>
-
-            <div class="product-card" id="product-card-3">
+            <div class="product-card">
               <div class="product-description">
-                <p>near-perfect combustion</p>
+                <a href="javascript:void(0)">near-perfect combustion</a>
               </div>
               <img src="./assets/images/products/boilers.jpg" alt="boilers">
               <div class="product-details">
-                <h3 class="product-title">CBEX dryback elite</h3>
+                <a href="javascript:void(0)" class="product-title">CBEX dryback elite</a>
                 <div class="product-number"><b>CB Part #:</b>
                   <p>4268902</p>
                 </div>
                 <button class="view-details">view details</button>
               </div>
             </div>
-
-            <div class="product-card" id="product-card-4">
+            <div class="product-card">
               <div class="product-description">
-                <p>near-perfect combustion</p>
+                <a href="javascript:void(0)">near-perfect combustion</a>
               </div>
               <img src="./assets/images/products/boilers.jpg" alt="boilers">
               <div class="product-details">
-                <h3 class="product-title">CBEX dryback elite</h3>
+                <a href="javascript:void(0)" class="product-title">CBEX dryback elite</a>
                 <div class="product-number"><b>CB Part #:</b>
                   <p>4268902</p>
                 </div>
@@ -524,10 +708,12 @@
           <h2>discover more</h2>
         </div>
         <div class="discover-cards">
-          <div class="discover-card" id="discover-card-1">
-            <div class="side-image"></div>
+          <div class="discover-card">
+            <a class="side-image"></a>
             <div class="card-info">
-              <h3 class="card-title">product index</h3>
+              <a href="javascript:void(0)">
+                <h3 class="card-title">product index</h3>
+              </a>
               <p class="card-caption">have something in mind?</p>
               <p class="card-description">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit enam nonummy lorem ipsum dolor sit amet
@@ -538,10 +724,12 @@
               </a>
             </div>
           </div>
-          <div class="discover-card" id="discover-card-2">
-            <div class="side-image"></div>
+          <div class="discover-card">
+            <a class=" side-image"></a>
             <div class="card-info">
-              <h3 class="card-title">find a rep</h3>
+              <a href="javascript:void(0)">
+                <h3 class="card-title">find a rep</h3>
+              </a>
               <p class="card-caption">over 1,500 reps worldwide</p>
               <p class="card-description">
                 The Cleaver-Brooks Representative Association (CBRA) is the first and only dedicated sales and service
