@@ -20,7 +20,7 @@ ul {
   padding: 0;
 }
 
-#overlay {
+.overlay {
   position: fixed;
   display: none;
   width: 100%;

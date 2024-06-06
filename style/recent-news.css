@@ -14,7 +14,7 @@
   position: relative;
 }
 
-#view-all-news {
+.view-all-news {
   cursor: pointer;
   padding: 0;
   margin-left: auto;
@@ -29,7 +29,7 @@
   font-weight: 500;
 }
 
-#view-all-news i {
+.view-all-news i {
   margin-left: 5px;
 }
 .news-cards {
@@ -68,12 +68,12 @@
   margin-left: 5px;
 }
 @media screen and (max-width: 950px) {
-  #news-card-3 {
+  .news-card:nth-child(3) {
     display: none;
   }
 }
 @media screen and (max-width: 650px) {
-  #news-card-2 {
+  .news-card:nth-child(2) {
     display: none;
   }
 }

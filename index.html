@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header>
     <div class="notification-bar">
       <div class="container">
         <p>
@@ -37,21 +37,21 @@
     <div class="main-content">
       <div class="container">
         <label for="burger-menu-check">
-          <i id="burger-menu" class="mobile fas fa-bars"></i>
+          <i class="burger-menu mobile fas fa-bars"></i>
         </label>
         <input type="checkbox" name="burger-menu-check" id="burger-menu-check" aria-hidden="true"
           class="hidden-input" />
-        <div id="overlay"></div>
+        <div class="overlay"></div>
         <a class="logo-link" href="./index.html">
-          <img src="./assets/images/logo/logo.svg" alt="Logo" id="xng-logo-header" class="logo-img" />
+          <img src="./assets/images/logo/logo.svg" alt="Logo" class="logo-img" />
         </a>
         <nav class="main-content-menu hide-mobile">
           <div class="mobile menu-header">
-            <label for="burger-menu-check" id="exit-burger-menu">
+            <label for="burger-menu-check">
               <i class="fas fa-times"></i>
             </label>
           </div>
-          <ul class="nav">
+          <ul>
             <li>
               <a href="./pages/solution.html">solutions</a>
               <label class="mobile">
@@ -513,11 +513,11 @@
           <h2>recent news</h2>
         </div>
         <div class="all-news">
-          <a href="javascript:void(0)" id="view-all-news"><span>view all news</span><i
+          <a href="javascript:void(0)" class="view-all-news"><span>view all news</span><i
               class="fa-solid fa-arrow-right"></i></a>
           <button class="navigation-button" id="nav-next"><i class="fa-solid fa-chevron-right"></i></button>
           <div class="news-cards">
-            <div class="news-card" id="news-card-1">
+            <div class="news-card">
               <a href="javascript:void(0)">
                 <div class="news-img"><img src="./assets/images/cards/cards-temp-card1.png" alt="cards-temp-card1">
                 </div>
@@ -535,7 +535,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-card" id="news-card-2">
+            <div class="news-card">
               <a href="javascript:void(0)">
                 <div class="news-img"><img src="./assets/images/cards/cards-temp-card2.png" alt="cards-temp-card2">
                 </div>
@@ -554,7 +554,7 @@
               </a>
             </div>
           </div>
-          <div class="news-card" id="news-card-3">
+          <div class="news-card">
             <a href="javascript:void(0)">
 
               <div class="news-img"><img src="./assets/images/cards/cards-temp-card3.png" alt="cards-temp-card3"></div>
@@ -643,7 +643,7 @@
           <div class="products-cards">
             <button class="navigation-button" id="nav-next"><i class="fa-solid fa-chevron-right"></i></button>
 
-            <div class="product-card" id="product-card-1">
+            <div class="product-card">
               <div class="product-description">
                 <a href="javascript:void(0)">near-perfect combustion</a>
               </div>
@@ -656,7 +656,7 @@
                 <button class="view-details">view details</button>
               </div>
             </div>
-            <div class="product-card" id="product-card-2">
+            <div class="product-card">
               <div class="product-description">
                 <a href="javascript:void(0)">near-perfect combustion</a>
               </div>
@@ -669,7 +669,7 @@
                 <button class="view-details">view details</button>
               </div>
             </div>
-            <div class="product-card" id="product-card-3">
+            <div class="product-card">
               <div class="product-description">
                 <a href="javascript:void(0)">near-perfect combustion</a>
               </div>
@@ -682,7 +682,7 @@
                 <button class="view-details">view details</button>
               </div>
             </div>
-            <div class="product-card" id="product-card-4">
+            <div class="product-card">
               <div class="product-description">
                 <a href="javascript:void(0)">near-perfect combustion</a>
               </div>
@@ -708,7 +708,7 @@
           <h2>discover more</h2>
         </div>
         <div class="discover-cards">
-          <div class="discover-card" id="discover-card-1">
+          <div class="discover-card">
             <a class="side-image"></a>
             <div class="card-info">
               <a href="javascript:void(0)">
@@ -724,8 +724,8 @@
               </a>
             </div>
           </div>
-          <div class="discover-card" id="discover-card-2">
-            <a class="side-image"></a>
+          <div class="discover-card">
+            <a class=" side-image"></a>
             <div class="card-info">
               <a href="javascript:void(0)">
                 <h3 class="card-title">find a rep</h3>

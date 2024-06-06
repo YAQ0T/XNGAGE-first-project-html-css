@@ -73,19 +73,19 @@
   margin-top: 20px;
 }
 @media screen and (max-width: 1316px) {
-  .products-cards #product-card-4 {
+  .products-cards .product-card:nth-child(4) {
     display: none;
   }
 }
 
 @media screen and (max-width: 996px) {
-  .products-cards #product-card-3 {
+  .products-cards .product-card:nth-child(3) {
     display: none;
   }
 }
 
 @media screen and (max-width: 656px) {
-  .products-cards #product-card-2 {
+  .products-cards .product-card:nth-child(2) {
     display: none;
   }
 }

@@ -1,4 +1,4 @@
-.header {
+header {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -56,7 +56,7 @@
   top: 5px;
 }
 
-#xng-logo-header {
+.logo-img {
   width: 185px;
   height: auto;
 }
@@ -109,7 +109,7 @@
   border-color: var(--primary-color-brand-01);
   cursor: pointer;
 }
-#burger-menu-check:checked ~ #overlay {
+#burger-menu-check:checked ~ .overlay {
   display: flex;
 }
 #burger-menu-check:checked ~ .main-content-menu {
@@ -117,10 +117,6 @@
 }
 
 @media screen and (max-width: 950px) {
-  .hide-mobile {
-    display: none;
-  }
-
   .notification-bar > div {
     flex-direction: column;
     gap: 0;
@@ -154,18 +150,18 @@
     align-items: center;
   }
 
-  #burger-menu {
+  .burger-menu {
     font-size: 1.5625rem;
     color: var(--primary-color-brand-01);
     cursor: pointer;
     transition: transform 2s;
   }
 
-  #burger-menu:hover {
+  .burger-menu:hover {
     transform: rotate(180deg);
   }
 
-  #xng-logo-header {
+  .logo-img {
     padding: 0;
     margin: 0;
     width: 165px;

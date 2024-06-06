@@ -35,7 +35,7 @@
   position: absolute;
   z-index: 0;
   top: -110px;
-  right: 0;
+  right: 20px;
   width: 24%;
   max-width: 300px;
   background-color: var(--primary-color-brand-03);

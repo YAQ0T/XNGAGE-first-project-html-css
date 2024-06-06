@@ -19,10 +19,10 @@
   width: 50%;
   margin-bottom: 0;
 }
-#discover-card-1 .side-image {
+.discover-card:nth-child(1) .side-image {
   background-image: url("./../assets/images/discover-more/card1.jpg");
 }
-#discover-card-2 .side-image {
+.discover-card:nth-child(2) .side-image {
   background-image: url("./../assets/images/discover-more/card2.jpg");
 }
 .discover-card .card-info {
@@ -30,10 +30,10 @@
   color: var(--text-inverse);
   padding: 30px;
 }
-#discover-card-1 .card-info {
+.discover-card:nth-child(1) .card-info {
   background-color: var(--supplementary-color-ui-06);
 }
-#discover-card-2 .card-info {
+.discover-card:nth-child(2) .card-info {
   background-color: var(--supplementary-color-ui-04);
 }
 .discover-card .card-title {
